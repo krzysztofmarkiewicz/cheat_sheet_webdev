@@ -1,0 +1,180 @@
+<div class="main-box-in">
+    <!-- button (można również tworzyć poprzez tag input tj <input type="button" value=""> )-->
+    <h1>BUTTONy</h1><button>CLICK</button>
+    <button disabled>CLICK</button>
+    <hr>
+    <!-- formularz (raczej niestosowany; takie rzeczy robimy w js) -->
+    <h1>FORMULARZE</h1>
+    <form action=""></form>
+    <p>Napisz coś</p>
+    <textarea name="" id="" cols="30" rows="5"></textarea>
+    <hr>
+    <!-- pola wyboru -->
+    <h1>POLA WYBORU</h1><select name="Przykładowa lista wyboru" id="">
+        <option value="">Opcja 1</option>
+        <option value="">Opcja 2</option>
+        <option value="" disabled>Opcja 3</option>
+    </select>
+    <hr>
+    <!-- przykładowe opcje pól (raczej niestosowany; takie rzeczy robimy w js) -->
+    <h1>INPUTy</h1><input type="text"><br>
+    <input type="checkbox"><br>
+    <input type="checkbox" checked><br>
+    <input type="button" value="clickWOR<br>
+    <input type=" color" name="" id=""><br>
+    <input type="date" name="" id=""><br>
+    <input type="number" name="" id=""><br>
+    <input type="radio" name="" id="">
+    <input type="radio" name="" id="">
+    <input type="radio" name="" id=""><br>
+    <input type="range" name="" id=""><br>
+    <input type="password" name="" id="">
+    <hr>
+
+    <h1>FORMATOWANIE TEKSTU</h1>
+    <p>Różnice w poniższych przykładach pod tym linkiem <br><a
+            href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14874494#overview">szkolenie
+            udemy</a></p>
+    <p>STRONG i EM - wartość semantyczna (ważność tekstu)<br>
+        b, i, u - CSS (tylko wygląd)<br><br>
+        <del>Lorem ipsum dolor sit amet.</del><br>
+        <s>Lorem ipsum dolor sit amet.</s><br>
+        <strong>Lorem ipsum dolor sit amet.</strong><br>
+        <b>Lorem ipsum dolor sit amet.</b><br>
+        <em>Lorem ipsum dolor sit amet.</em><br>
+        <i>Lorem ipsum dolor sit amet.</i><br>
+        <u>Lorem ipsum dolor sit amet.</u>
+        <br><br></p>
+    <p>Lorem ipsum dolor sit amet. <mark>Lorem, ipsum.</mark>Lorem, ipsum.
+    </p>
+    <p>2<sup>2</sup>=4
+        <br>2<sub>2</sub>=4</p>
+    <br><br>
+    TAG "pre" - uznaje białe znaki (zmienia czcionkę, tekst może wyjechać poza,)
+    <pre>Lorem \
+        ipsum dolor
+       dd  ere 
+         tttt   yrye
+    wew   wewew
+      rrr
+         w    ,    .</pre>
+    <br><br>
+    TWARDA SPACJA "& nbsp;"
+    teraz będą 3 spacje twarde &nbsp; &nbsp; &nbsp; i już
+    <hr>
+</div>
+
+
+<div class="main-box-in">
+    <h1>TABELE</h1>
+    <!-- 
+    table - rodzic
+    th - nagłowek
+    tr - table row
+    td - table data
+     -->
+    <table>
+        <tr>
+            <th>Nagłowek 1</th>
+            <th>Nagłowek 2</th>
+        </tr>
+        <tr>
+            <td>Dane1</td>
+            <td>Dane2</td>
+        </tr>
+        <tr>
+            <td>Dane3</td>
+            <td>Dane4</td>
+        </tr>
+        <tr>
+            <td>Dane5</td>
+            <td>Dane6</td>
+        </tr>
+        <tr>
+            <td>Dane7</td>
+            <td>DAne8</td>
+        </tr>
+    </table>
+    <p>Przykładowa tabela</p>
+    <table>
+        <tr>
+            <th>Tytuł</th>
+            <th>Rodzaj</th>
+        </tr>
+        <tr>
+            <td>Kiler</td>
+            <td rowspan="3">Komedia</td>
+        </tr>
+        <tr>
+            <td>KacVegas</td>
+        </tr>
+        <tr>
+            <td>Deadpoll</td>
+        </tr>
+        <tr>
+            <td>Szybcy 6</td>
+            <td>Akcja</td>
+        </tr>
+    </table>
+
+    <p>Plan dnia ...przykłąd/ćwiczenie
+        <table>
+            <tr>
+                <td></td>
+                <td>Piątek</td>
+                <td>Sobota</td>
+            </tr>
+            <tr>
+                <td>18:00</td>
+                <td>Serial</td>
+                <td>Film</td>
+            </tr>
+            <tr>
+                <td>21:00</td>
+                <td colspan="2">Spotkanie ze znajomymi</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <caption>Rachunek / tabela wzorcowa</caption>
+            <thead>
+                <tr>
+                    <th>Danie</th>
+                    <th>Cena</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kotlet Schadowy</td>
+                    <td>Pepsi</td>
+                </tr>
+                <tr>
+                    <td>15zł</td>
+                    <td>5zł</td>
+                </tr>
+            <tfoot>
+                <tr>
+                    <td>Suma</td>
+                    <td>20PLN</td>
+                </tr>
+            </tfoot>
+            </tbody>
+        </table>
+        <hr>
+        <h3>MULTIMEDIA NA STRONIE</h3>
+        <p>AUDIO</p>
+        <audio controls="controls" src="media/niereg.mp3"
+            style="border-radius:27px; box-shadow: 5px 5px 10px black; width: 320px;"></audio>
+        <br><br>
+        <p>FILMY</p>
+        <video controls="controls" src="media/vid.mov"
+            style="width:320px; border-radius:20px; border: solid 1px rgb(146, 146, 146); box-shadow: 5px 5px 10px white;"></video>
+        <br><br>
+        <p>Film z YouTube</p>
+        <iframe width="320" src="https://www.youtube.com/embed/-yrvfA585Io"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+            style="width:300px; border-radius:20px; border: solid 1px rgb(146, 146, 146); box-shadow: 5px 5px 10px white;"></iframe>
+        <br><br>
+        <p>Zdjęcie - bardfzo ważne żeby opisywać zdjęcia</p>
+        <img src="media/foto.jpg" alt="Zdjęcie mojej mordki">
+</div>

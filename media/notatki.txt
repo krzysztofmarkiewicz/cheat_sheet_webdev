@@ -1,0 +1,75 @@
+Ja stworzyc swoją własną stronę
+http://www.kurshtmlcss.pl/jak-zrobic-strone-internetowa/pozycjonowanie.php
+
+
+
+body
+    background-color: #333333
+
+div
+    position: relative
+    background-image: url('https://img.pixers.pics/pho_wat(s3:700/FO/46/99/33/89/700_FO46993389_4f2eb695265f2489e51f116072bb9dac.jpg,670,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,450,650,jpg)/naklejki-kolo-samochodowe.jpg')
+    background-size: 130%
+    background-position: -50px -60px
+    width: 340px
+    height: 340px
+    border-radius: 50%
+    animation: circle 5s linear  10 alternate
+
+img
+    
+
+
+
+    
+
+@keyframes circle
+    0%
+        left: 0px
+        transform: rotate(0deg)
+    10%
+        left: 10px
+        transform: rotate(36deg)
+    20%
+        left: 20px
+        transform: rotate(72deg)
+    30%
+        left: 30px
+        transform: rotate(108deg)
+    40%
+        left: 40px
+        transform: rotate(144deg)
+    50%
+        left: 50px
+        transform: rotate(180deg)
+    60%
+        left: 60px
+        transform: rotate(216deg)
+    70%
+        left: 70px
+        transform: rotate(252deg)
+    80%
+        left: 80px
+        transform: rotate(288deg)
+    90%
+        left: 90px
+        transform: rotate(314deg)
+    100%
+        left: 100px
+        transform: rotate(360deg)
+
+    
+    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div></div>
+</body>
+</html>

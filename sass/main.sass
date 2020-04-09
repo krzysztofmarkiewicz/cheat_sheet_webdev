@@ -1,0 +1,155 @@
+@mixin list-menu
+    li
+        display: inline-block
+    li:hover
+        transform: rotate(30deg)
+    a:link, a:visited
+        text-decoration: none
+        color: white
+        text-shadow: 1px 1px 3px black
+        cursor: pointer
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    display: grid
+    grid-template-columns: 1fr 3fr
+    grid-template-rows: 70px 70px 70px auto 40px
+    background-color: #333
+    background-attachment: fixed
+    font-family: sans-serif
+    padding: 0px 30px
+    list-style-position: inside
+    word-break: break-word
+
+img
+    width: 100%
+
+header
+    grid-column: 1/3
+    grid-row: 1/2
+    background-color: #1c87b9
+    text-align: center
+    line-height: 80px
+    text-transform: uppercase
+    color: white
+    font-weight: bold
+    font-size: 40px
+    text-shadow: 0 0 10px black
+    transform: skew(160deg)
+
+nav, aside
+    line-height: 60px
+    font-size: 30px
+    text-align: center
+    @include list-menu
+
+nav
+    grid-column: 1/3
+    grid-row: 2/3
+    background-color: #f0e47c
+    transform: skew(20deg)
+
+aside
+    grid-column: 1/3
+    grid-row: 3/4
+    background-color: #f08d7c
+    transform: skew(160deg)
+
+main
+    margin-top: 30px
+    grid-column: 1/3
+    grid-row: 4/5
+    border-radius: 0
+
+footer
+    grid-column: 1/3
+    grid-row: 5/6
+    background-color: #299625
+    border-radius: 25px
+
+.to-top-btn
+    position: fixed
+    z-index: 1
+    right: 35px
+    bottom: 50%
+    font-size: 40px
+    text-decoration: none
+    color: #ffffff
+
+.to-top-btn::after
+    content: ''
+    z-index: -4
+    width: 40px
+    height: 40px
+    position: fixed
+    background-color: #000000
+    right: 30px
+    bottom: 50%
+    border-radius: 50%
+    border: 5px solid black
+
+.menu-sticky
+    position: sticky
+    top: 0px
+    width: 100%
+    height: 30px
+    background-color: #333
+    color: #333
+    text-align: center
+    line-height: 30px
+    font-size: 18px
+    @include list-menu
+
+.main-box
+    margin-bottom: 30px
+    padding: 30px
+    border-radius: 0px
+    line-height: 1.5
+    background-attachment: fixed
+
+.main-box-html
+    background: rgb(72, 255, 0)
+    background: linear-gradient(135deg, #00ccffef 30%, rgba(72, 255, 0, 0.966) 100%)
+    table, tr, td,th
+        border: solid 1px
+        border-spacing: 0px
+        background-color: white
+
+.main-box-flexbox
+
+    background: rgb(113, 177, 87)
+    background: linear-gradient(135deg, rgb(109, 162, 241) 0%, rgb(252, 235, 1) 100%)
+
+.main-box-grid
+    background: rgb(113, 177, 87)
+    background: linear-gradient(135deg, rgb(241, 129, 109) 0%, rgb(252, 235, 1) 100%)
+
+.main-box-css
+    background: rgb(113, 177, 87)
+    background: linear-gradient(135deg, rgba(0, 204, 255, 1) 0%, rgba(0, 255, 115, 1) 100%)
+
+.main-box-js
+    background: rgb(113, 177, 87)
+    background: linear-gradient(135deg, #00ccff 0%, #ff0037 100%)
+    li
+        padding: 0 30px
+        line-height: 1.5
+.main-box-sass
+    background: rgb(113, 177, 87)
+    background: linear-gradient(135deg, rgb(241, 129, 109) 0%, rgb(252, 235, 1) 100%)
+.main-box-notatki
+    background-color: #f8ceec
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%)
+.main-box-vscode
+    background: rgb(113, 177, 87)
+    background: linear-gradient(135deg, rgba(0, 204, 255, 1) 0%, rgba(0, 255, 115, 1) 100%)
+   
+.main-box-bootstrap
+    background: rgb(113, 177, 87)
+    background: linear-gradient(135deg, #ffce95 0%, #fdff7e 100%)
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ściąga</title>
+    <script src="https://kit.fontawesome.com/b7615cb9e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="css/small.css">
+    <link rel="stylesheet" media="screen and (min-width:1200px)" href="css/large.css">
+
+</head>
+
+<body>
+
+    <header name="top">ściąga</header>
+    <nav>
+        <ol>
+            <li><a href="#main-html">html</a></li>
+            <li><a href="#css-html">css</a></li>
+            <li><a href="#main-grid">grid</a></li>
+            <li><a href="#main-flexbox">flexbox</a></li>
+            <li><a href="#main-js">js</a></li>
+        </ol>
+    </nav>
+    <aside>
+        <ol>
+            <li><a href="#main-bootstrap">bootstrap</a></li>
+            <li><a href="#main-sass">sass</a></li>
+            <li><a href="#main-notatki">notatki</a></li>
+            <li><a href="#main-vscode">vscode</a></li>
+        </ol>
+    </aside>
+    <main>
+        <div class="menu-sticky">
+            <ol>
+                <li><a href="#main-html">html</a></li>
+                <li><a href="#css-html">css</a></li>
+                <li><a href="#main-grid">grid</a></li>
+                <li><a href="#main-flexbox">flexbox</a></li>
+                <li><a href="#main-js">js</a></li>
+                <li><a href="#main-sass">sass</a></li>
+                <li><a href="#main-notatki">notatki</a></li>
+                <li><a href="#main-vscode">vscode</a></li>
+                <li><a href="#main-bootstrap">bootstrap</a></li>
+            </ol>
+        </div>
+        <div id="main-html" class="main-box main-box-html" include-html="html.html"></div>
+        <div id="css-html" class="main-box main-box-css" include-html="css.html"></div>
+        <div id="main-flexbox" class="main-box main-box-flexbox" include-html="flexbox.html"></div>
+        <div id="main-grid" class="main-box main-box-grid" include-html="grid.html"></div>
+        <div id="main-js" class="main-box main-box-js" include-html="javascript.html"></div>
+        <div id="main-sass" class="main-box main-box-sass" include-html="sass.html"></div>
+        <div id="main-notatki" class="main-box main-box-notatki" include-html="notatki.html"></div>
+        <div id="main-vscode" class="main-box main-box-vscode" include-html="vscode.html"></div>
+        <div id="main-bootstrap" class="main-box main-box-bootstrap" include-html="bootstrap.html"></div>
+    </main>
+    <footer></footer>
+    <a class="to-top-btn" href="#top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    <script src="js/script.js"></script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>

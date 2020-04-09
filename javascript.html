@@ -1,0 +1,594 @@
+<h1>JAVASCRIPT - <a href="http://kursjs.pl/index.php">KURS JS - SUPER STRONA</a></h1>
+
+<ul>
+    <li>Javascript umieszczamy na dole strony tuż nad znacznikiem zamykającym body, po to żeby przeglądarka przeczytałą
+        całą
+        stronę a na koniec wykonała skrypt, który będzie coś na stronie zmieniał</li>
+    <li>Javascript możemy pisać bezpośredni w tagach "script", ale zalecane jest tworzenie zewnętrznych plików i
+        importowanie ich za pomocą tagu "script scr="</li>
+    <li>Zmienne i jak je deklarować
+        <ul>
+            <li>o zmiennych możemy myśleć jak o pudełkach w których możemy przechowywać jakąś wartość</li>
+            <li>do tworzenia ich stosujemy używamy VAR, LET, CONST - z tym, że obecnie powinniśmy korzystać let i const
+                (VAR to już "prehistoria"). Consola w przewglądarce podpowie np że zmienna let czy const już była użyta
+                i
+                wywali błąd, a przy var tak się nie dzieje i można omyłkowo nadpisać jakąś zmienną inną wartością</li>
+            <li>tworzenie zmiennej
+                <ul>
+                    <li>var nazwa_zmiennej = 'wartość'; </li>
+                    <li>na końcu zawsze wstawiać średnik,; nie jest obowiązkowy ale zalecany</li>
+                    <li>wartość w cudzysłlowie to typ STRING (tekst)</li>
+                    <li>$ słuzy min do tego by w stringu możemy wplatać zmienne, umieszczamy wtedy całą wartość w
+                        grawisach (druga opcja
+                        na klawiszu tyldy <br> example: <br> console.log(`Cześć, jestem ${name}, mam ${age} lat i lubię
+                        kolor
+                        ${color}`);</li>
+                    <li>używając let zmienną możemy nadpisać <br>
+                        example: <br>
+                        let age = 25; <br>
+                        age = 33;
+                        <br><br>
+                        poprzez let zmienną możemy utworzyć jako zmiejnną annimową czyli nie przypisawać do niej
+                        wartości <br>
+                        example: <br>
+                        let age;
+                    </li>
+                    <li>
+                        przy const zmienna jest stała (nie można jejzmienić w dalszej częsci kodu) i trzeba jej od razu
+                        przypisać wartość
+                    </li>
+
+                    <li>
+                        nazwę zmiennej tworzymy stosując tzw notacjęWielbłądzią(camelCase)
+                    </li>
+                    <li>
+                        nie możemy używać myślników (tj minus)
+                    </li>
+                    <li>
+                        nie możemy cyfr jako pierwszego znaku w nazwie zmiennej
+                    </li>
+                    nie rozpoczynamy nazwy zmiennej od dużej litery
+                    <li>
+
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </li>
+    <li>DOM - Document Object Model
+        <ul>
+            <li>DOM to jest taka reprezentacja n aszego pliku html</li>
+            <li>w DOMie możemy mieć treści przezntowane dynamicznie których nie posiadamy w naszym HTMLu</li>
+        </ul>
+    </li>
+    <li>Typy danych
+        <ul>
+            <li>Typy proste (prymitywne)
+                <ul>
+                    <li>
+                        STRING - 'cześć' - tekst
+                    </li>
+                    <li>NUMBER - 23 (liczby</li>
+                    <li>BOOLEAN - TRUE/FALSE</li>
+                    <li>NULL</li>
+                    <li>UNDEFINED</li>
+                    <li>SYMBOL</li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>Typy złożone
+                <ul>
+                    <li>OBJECT</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+
+        OPERATORY <a href="http://kursjs.pl/kurs/super-podstawy/operatory.php">MDN</a>
+        <h1>Operatory</h1>
+
+
+        <p>
+            Operatory, ah operatory.
+            Gdy napiszesz <strong>4 + 5</strong>, znak <strong>+</strong> to właśnie operator, a <strong>4</strong> i
+            <strong>5</strong> to tak zwane operandy.
+        </p>
+        <p>
+            Większość z nich znamy z matematyki, dlatego dział ten będzie dość skrótowy.
+        </p>
+        <p>Poniżej zamieszczam przykłady dla <strong>y = 5</strong></p>
+
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Nazwa działania</th>
+                <th>Równanie</th>
+                <th colspan="2">Wynik</th>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td>Dodawanie</td>
+                <td>x = y + 2</td>
+                <td>y = 5</td>
+                <td>x = 7</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Odejmowanie</td>
+                <td>x = y - 2</td>
+                <td>y = 5</td>
+                <td>x = 3</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Mnożenie</td>
+                <td>x = y * 2</td>
+                <td>y = 5</td>
+                <td>x = 10</td>
+            </tr>
+            <tr>
+                <td>/</td>
+                <td>Dzielenie</td>
+                <td>x = y / 2</td>
+                <td>y = 5</td>
+                <td>x = 2.5</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Modulo czyli reszta z dzielenia</td>
+                <td>x = y % 2</td>
+                <td>y = 5</td>
+                <td>x = 1</td>
+            </tr>
+            <tr>
+                <td>**</td>
+                <td>Potęgowanie
+                </td>
+                <td>x = y ** y</td>
+                <td>y = 5</td>
+                <td>x = 3125</td>
+            </tr>
+            <tr>
+                <td rowspan="2">++</td>
+                <td rowspan="2">Inkrementacja</td>
+                <td>x = ++y</td>
+                <td>y = 6</td>
+                <td>x = 6</td>
+            </tr>
+            <tr>
+                <td>x = y++</td>
+                <td>y = 6</td>
+                <td>x = 5</td>
+            </tr>
+            <tr>
+                <td rowspan="2">--</td>
+                <td rowspan="2">Dekrementacja</td>
+                <td>x = --y</td>
+                <td>y = 4</td>
+                <td>x = 4</td>
+            </tr>
+            <tr>
+                <td>x = y--</td>
+                <td>y = 4</td>
+                <td>x = 5</td>
+            </tr>
+        </table>
+
+        <code>
+            //dla x = 5;
+            console.log(x + 2); //7
+            console.log(x - 1); //4
+            console.log(x * 3); //15
+            console.log(x / 2); //2.5
+            console.log(x % 2); //1
+            console.log(x**3); //125
+            /<code>
+
+                <p>Zwróć uwagę na operator inkrementacji, który może występować przed zmienną lub po zmiennej.</p>
+
+                <p>Gdy występuje przed zmienną, zwiększenie jej wartości nastąpi w danej instrukcji.
+                    Jeżeli występuje po zmiennej, zwiększona wartość wystąpi dopiero w kolejnej instrukcji.</p>
+
+                <code>
+                    const x = 5;
+                    console.log(x--); //5
+                    console.log(x); //4
+
+                    const y = 5;
+                    if (y-- < 5) { //nie wypisze się } </code> <code>
+                        const x = 5;
+                        console.log(--x); //4
+                        console.log(x); //4
+
+                        const y = 5;
+                        if (--y < 5) { //wypisze się } </code> <code>
+                            const x = 24;
+
+                            if (x % 2 === 0) {
+                            console.log("Liczba parzysta");
+                            }
+                </code>
+
+                <!-- ### -->
+                <h2>Operatory Przypisania</h2>
+                <p>
+                    Czyli operatory, które służą do przypisania do zmiennej jakiejś wartości, pola, obiektu itp.<br>
+                    Poniżej zamieszczamy przykłady dla <strong>x = 10</strong> i <strong> y = 5</strong>:
+                </p>
+
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Przykład</th>
+                        <th>Równoznaczne z</th>
+                        <th>Wynik</th>
+                    </tr>
+                    <tr>
+                        <td>=</td>
+                        <td>x = y</td>
+                        <td>x = y</td>
+                        <td>x = 5</td>
+                    </tr>
+                    <tr>
+                        <td>+=</td>
+                        <td>x += y</td>
+                        <td>x = x + y</td>
+                        <td>x = 15</td>
+                    </tr>
+                    <tr>
+                        <td>-=</td>
+                        <td>x -= y</td>
+                        <td>x = x - y</td>
+                        <td>x = 5</td>
+                    </tr>
+                    <tr>
+                        <td>*=</td>
+                        <td>x *= y</td>
+                        <td>x = x * y</td>
+                        <td>x = 50</td>
+                    </tr>
+                    <tr>
+                        <td>/=</td>
+                        <td>x /= y</td>
+                        <td>x = x / y</td>
+                        <td>x = 2</td>
+                    </tr>
+                    <tr>
+                        <td>%=</td>
+                        <td>x %= y</td>
+                        <td>x = x % y</td>
+                        <td>x = 0</td>
+                    </tr>
+                </table>
+                <code>
+                    let myVar = "Przykładowy tekst";
+                    myVar += " który nie";
+                    myVar += " zmieścił by się w jednej linijce";
+
+                    let x = 10;
+                    x += 5; //15
+                </code>
+
+                <!-- ### -->
+                <h2>Operatory Porównania</h2>
+                <p>
+                    Operatory logiczne stosuje się w instrukcjach warunkowych.
+                    Służą one do porównywania lewej strony równania do prawej, w wyniku której zawsze zwracana jest
+                    true/false.
+                </p>
+
+                <p>Poniżej zamieszczam przykłady dla <strong>x = 5</strong></p>
+
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Opis</th>
+                        <th>Równanie</th>
+                        <th>Zwróci</th>
+                    </tr>
+                    <tr>
+                        <td>==</td>
+                        <td>równe</td>
+                        <td>x == 8</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>!=</td>
+                        <td>różne</td>
+                        <td>x != 8</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">===</td>
+                        <td rowspan="2">równa wartość i taki sam typ danych<span>W naszym przykładzie x to numer,
+                                a 5 po prawej stronie jest tekstem</span></td>
+                        <td>x === 5</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>x === "5"</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">!==</td>
+                        <td rowspan="2">różne wartości lub różny typ danych<span>W naszym przykładzie x to numer,
+                                a 5 po prawej stronie jest tekstem</span></td>
+                        <td>x !== "5"</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>x !== 5</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td>większe od</td>
+                        <td>x &gt; 8</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;</td>
+                        <td>mniejsze od</td>
+                        <td>x &lt; 8</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;=</td>
+                        <td>większe bądź równe od</td>
+                        <td>x &gt;= 8</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;=</td>
+                        <td>mniejsze bądź równe od</td>
+                        <td>x &lt;= 8</td>
+                        <td>true</td>
+                    </tr>
+                </table>
+
+                <code>
+                    const myVar = 8;
+
+                    if (myVar === 10) {
+                    //ten kawałek kodu się nie wykona
+                    }
+
+                    if (myVar <= 10) { //ten kawałek kodu się wykona } if (myVar !==8) { //ten kawałek kodu się nie
+                        wykona } </code> <p>Więcej na ten temat dowiemy się podczas stosowania <a
+                            href="./instrukcje-warunkowe.php">instrukcji
+                            warunkowych</a>.</p>
+
+                        <!-- ### -->
+                        <h2>Operatory Logiczne</h2>
+                        <p>
+                            Są one także stosowane w instrukcjach warunkowych. Za ich pomocą możemy łączyć kilka
+                            porównań w jedną
+                            całość. Poniżej przykłady
+                            dla <strong>x = 6</strong> i <strong>y = 3</strong>:
+                        </p>
+
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Opis</th>
+                                <th style="width:150px">Przykład</th>
+                                <th>Wynik</th>
+                            </tr>
+                            <tr>
+                                <td>&amp;&amp;</td>
+                                <td>and (i)</td>
+                                <td>(x &lt; 10 &amp;&amp; y &gt; 1)</td>
+                                <td>Prawda, bo x jest mniejsze od 10 <strong>i</strong> y jest większe od 1</td>
+                            </tr>
+                            <tr>
+                                <td>||</td>
+                                <td>or (lub)</td>
+                                <td>(x &gt; 8 || y &gt; 1)</td>
+                                <td>Prawda, bo x nie jest większe od 8, ale y jest większe od 1</td>
+                            </tr>
+                            <tr>
+                                <td>^</td>
+                                <td>xor (jeden z, ale nie dwa równocześnie)</td>
+                                <td>(x === 6 ^ y === 3)</td>
+                                <td>Fałsz, bo obydwa są prawdziwe</td>
+                            </tr>
+                            <tr>
+                                <td>!</td>
+                                <td>not (negacja)</td>
+                                <td>!(x === y)</td>
+                                <td>Prawda, bo negujemy to, że x === y</td>
+                            </tr>
+                        </table>
+
+                        <code>
+                            const myVar = 8;
+                            const myVar2 = 15;
+
+                            if (myVar === 8 && myVar2 === 10) {
+                            //ten kawałek kodu się nie wykona bo mamy "i", oba muszą być spełnione, a nie są
+                            }
+
+                            if (myVar === 8 || myVar2 === 8) {
+                            //ten kawałek się wykona bo mamy "lub" - jeden z warunków jest poprawny
+                            }
+
+                            if (myVar === 8 ^ myVar2 === 15) {
+                            //ten kawałek się nie wykona bo mamy "xor", a oba są spełnione
+                            }
+
+                            if (!(myVar === 8)) {
+                            //ten kawałek się nie wykona, bo mamy negację!
+                            //powyższy warunek jest jednoznaczny z myVar !== 8
+                            }
+
+                            if ((myVar === 2) || 1) {
+                            //ten kawałek zawsze się wykona, bo myVar nie jest 2,
+                            //ale drugi fragment warunku zawsze zwróci true (1 jest rzutowana na true)
+                            }
+                        </code>
+                        <ul>
+                            <li>Operatory arytmetyczne
+                                <br>dodawanie, odejmowanie, mnożenie, dzielenie,<br>
+                                oraz <br> modulo, czyli reszta z dzielenia (example: "let zmienna= 15 % 4" - wynik to 3)
+                                <br>
+                                inkrementacja, dekrmenetacja czyli zwiększanie lub zmniejszanie o 1 (operatory to "++" i
+                                "--")
+
+                            </li>
+                            <li>Operatory przypisania
+                                <ul>
+                                    <li>znak "=" (czyli to co po prawej przypisujemy do tego co po lewej</li>
+                                    <li>zank "+=" (example: x += y to x = x+y</li>
+                                    <li>zank "-=" (example: x -= y to x = x-y</li>
+                                    <li>tak samo z mnożenie, dzieleniem i modulo (x %= y to x=x % y)</li>
+                                </ul>
+                            </li>
+
+                            <li>Operatory porównania <a
+                                    href="https://developer.mozilla.org/pl/docs/Web/JavaScript/Referencje/Operatory/Operatory_porównania">MDN</a>
+                                <ul>
+                                    <li>Jako rezultat porównania zwracana jest wartość logiczna (true or false)</li>
+                                </ul>
+                            </li>
+                            <li>Operatory logiczne</li>
+
+                        </ul>
+    </li>
+
+    <li>INSTRUKCJE
+        <ul>
+            <li>IF ELSE - jeżeli to <br>
+                <code>example:
+                    <br><br>
+                    const nr = 3;
+                    <br>
+                    if (nr > 20) { //jeżeli...
+                    console.log("Liczba jest większa od 20");
+                    <br>
+                    } else { //w przeciwnym razie...
+                    console.log("Liczba jest mniejsza od 20");
+                    }</code>
+            </li>
+            <li>ELSE IF - jeżeli to lub to ...
+                <br><code>//ELSE IF <br>
+                    //będzie sprawdzać czy hasło jest dobre<br>
+                    //jeśli ma 10 i więcej znaków to mocna hasło<br>
+                    //jeśli 5-10 to słabe hasło<br>
+                    // jeśli mniej niż 5 to hasło nie do przyjęcia<br>
+                    let numLetterInPass = 14;<br>
+                    if (numLetterInPass > 10) {<br>
+                    console.log('Mocne hasło');<br>
+                    } else if (numLetterInPass >= 5 && numLetterInPass <= 10) {<br>
+                        console.log('Słabe hasło');<br>
+                        }else if (numLetterInPass < 0) {console.log(`nie ma takiej opcji`)}<br>
+
+                            else {<br>
+                            console.log('Hasło ma za mało znaków');<br>
+                            }</code>
+            </li>
+            <li>SWITCH działą podobnie jak else if
+                <br>
+                <code>
+                    const day = 'środa'<br>
+                    switch (day) { //sprawdza czy day jest<br>
+                    case 'poniedziałek': //jesli jest<br>
+                    console.log('Dziś jest poniedziałek') // to wykonuje<br>
+                    break; //jesli nie to break czyli przełącza na następny case az do skutku<br>
+                    case 'wtorek':<br>
+                    console.log('Dziś jest wtorek')<br>
+                    break;<br>
+                    case 'środa':<br>
+                    console.log('Dziś jest środa')<br>
+                    break;<br>
+                    case 'czwartek':<br>
+                    console.log('Dziś jest czwartek')<br>
+                    break;<br>
+                    case 'piątek':<br>
+                    console.log('Dziś jest piątek')<br>
+                    break;<br>
+                    case 'sobota':<br>
+                    console.log('Dziś jest sobota')<br>
+                    break;<br>
+                    case 'niedziela':<br>
+                    console.log('Dziś jest niedziela')<br>
+                    break;<br>
+                    <br>
+                    default: //jeśli żadna z powyższych nie zostanie znaleziopna to wykonaj break<br>
+                    console.log('NIE MA TAKIEGO DNIA ZIOMEK')<br>
+                    }
+                </code>
+            </li>
+        </ul>
+    <li>OPERATOR WARUNKOWY/ trójargumentowy/ tójwarunkowy <br>
+        <code>zmienna = (warunek) ? TRUE : FALSE;</code>
+        <code>
+            let x = 8
+            let text;
+            text = (x >= 10 && x <= 10) ? 'równe 10' : 'nie równe 10' ; console.log(text);</code> </li> </ul> <li>
+                TABLICE
+                <br><code>const nazwa_tablicy = []
+                    <br>
+                    const colors = ['red', 'blue', 'green'];
+                </code><br>
+                w tablicach zaczynamy liczyć od 0 (tzw indexy lub ID), czyli w moim przyładzie red ma id=0 , blue ma
+                id=1 itd. <br>żeby odwołać się do elemen tu z tablicy i wydrukować do w konsoli to
+                <code>console.log(colors[2]</code> i konsola wydrukuje green (bo red to 0)
+    </li>
+    <li>PĘTLE <a href="http://kursjs.pl/kurs/super-podstawy/petle.php">SUPER OPIS</a></li>
+    <ul>
+        <li>Pętla FOR</li><br>
+        for (zainicjowanie_zmiennych; warunek_kończący_wykonywanie_pętli; zmiana_zmiennych) {
+        kod który zostanie wykonany pewną ilość razy
+        }
+        <li>Pętla WHILE <br>
+            Pętla typu while służy, podobnie jak for, do wykonywania powtarzających się czynności. Pętlę for
+            najczęściej wykorzystuje się, kiedy liczba powtarzanych operacji jest znana, natomiast pętlę while,
+            kiedy liczby powtórzeń nie znamy, a zakończenie pętli jest uzależnione od spełnienia pewnego warunku.
+        </li>
+    </ul>
+    <li>FUNKCJE
+        budowa fukncji
+        <br>function nazwa_funkcji(argumenty) {kod który ma sę wykonać} <br>
+        wywołanie funkcji <br>
+        nazwa_funkcji(nowe argumenty)br
+        <code>
+            function addNumbers (number1, number2){
+            console.log(number1 + number2)
+            }
+            addNumbers(1, 3)
+
+
+            {
+
+            //instrukcje wnętrza funkcji
+
+            }</code>
+    </li>
+    <li>
+        POBIERANIE ELEMENTÓW <br>
+        Najczęściej używane przez nas to:
+
+        querySelector("css-selector") - pobiera pierwszy element pasujący do podanego selektora css
+        querySelectorAll("css-selector") -pobiera elementy pasujące do podanego selektora css <br>
+        <code>example: <br>
+            const buttons = document.querySelectorAll(".list .button");
+        </code><br>
+        Zalcane jest korzystanie z dwóch powyższych, ale są też dostąpne inne czyli<br><br>
+
+        getElementById("id") - pobiera jeden element o danym id<br>
+        getElementsByTagName("tag-name") - pobiera elementy o danym znaczniku<br>
+        getElementsByClassName("class-name") - pobiera elementy o danej klasie<br>
+        getElementsByName("name") - pobiera elementy o danym atrybucie name (w sumie mało użyteczne)<br>
+    </li>
+    <li>addEventListener <a href="http://kursjs.pl/kurs/events/events.php">link</a> - nasłuchiwacz <br>
+        sprawdza np czy był klik, czy najechał kursor i mnóstwo innych. wiele opisancyh w linku powyżej. <br>
+        Listenera zawsze dajemy na dole kodu <br><br>
+        <code>
+            nazwa_zmiennej.addEventListener('zdarzenie', nazwa_funkcji);</code><br><br>Możemy skorzystać z funkcji
+        anonimowej, choć nie jest to zalecane.
+        <code>nazwa_zmiennej.addEventListener('zdarzenie', function()){co się ma wykonać};</code></li>
+    <li>Odwoływanie się do klasy nazwa_zmiennej.classList</li>
+
+</ul>

@@ -1,0 +1,57 @@
+body {
+  padding: 0;
+}
+
+header {
+  -webkit-transform: none;
+          transform: none;
+}
+
+nav {
+  -webkit-transform: none;
+          transform: none;
+}
+
+aside {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.menu-sticky {
+  font-size: 16px;
+}
+
+.main-box {
+  padding: 15px;
+}
+
+.main-box-in {
+  width: 100%;
+  padding: 0 20px;
+}
+
+img {
+  width: 100% !important;
+}
+
+audio {
+  width: 100% !important;
+}
+
+video {
+  width: 100% !important;
+}
+
+iframe {
+  width: 100% !important;
+}
+
+.to-top-btn {
+  right: 5px;
+  bottom: 50%;
+}
+
+.to-top-btn::after {
+  right: 0px;
+}
+/*# sourceMappingURL=small.css.map */

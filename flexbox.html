@@ -1,0 +1,111 @@
+<div class="main-box-in">
+    <h1>FLEXBOX</h1>
+    <a href="https://developer.mozilla.org/pl/docs/Learn/CSS/CSS_layout/Flexbox">MDN o FLexboxie</a><br>
+    <a href="http://flexboxfroggy.com/#pl">SUPER GRA DO NAUKI FLEXBOXA</a>
+    <p>Flexbox jest jednowymiarowy. Elementy ustawiamy albo na osi x albo na osi y czyli albo poziomo albo pionow.
+        Ustawiamy je wtedy jako <strong>ROW</strong> albo <strong>COLUMN</strong>. Domyślnie ustwaiona jest opcja row.
+        Do ustwaienia trybu row służy "flex-direction: row". Są jeszcze inne np flex-direction:row-reverse i inne</p>
+    <p>Flexbox jest świetny do wyśrodkowywania (align-items oraz justify-content)</p>
+    <p>Flexa ustwaiamy na rodzicu</p>
+    <p>flexflow - można ustawic direction i wrap w jednym wierszu</p>
+    <div style="background-color: rgba(255, 255, 255, 0.267); padding: 20px; border-radius: 25px;">
+        <div>Ściąga z właściwości Flexa</div>
+        <div>
+            <div>
+                <h4>FLEX CONTAINER (rodzic) :</h4>
+                <ul>
+                    <li>
+                        <p><strong>display</strong>: flex / inline-flex;</p>
+                    </li>
+                    <li>
+                        <p><strong>flex-direction</strong>: row <strong>[</strong> wartość domyślna <strong>]</strong> /
+                            column / row-reverse / column-reverse;</p>
+                    </li>
+                    <li>
+                        <p><strong>flex-wrap</strong>: wrap / nowrap<strong> [</strong> wartość domyślna
+                            <strong>]</strong>;</p>
+                    </li>
+                    <li>
+                        <p><strong>align-items</strong> (prostopadłe do osi głównej): stretch <strong>[</strong> wartość
+                            domyślna <strong>]</strong> / flex-start / flex-end / center / baseline(wyrównuje wszystkie
+                            elementy do dolnej krawdzi czcionki);</p>
+                    </li>
+                    <li>
+                        <p><strong>justify-content</strong> (równoległe do osi głównej):<em> </em>flex-start<strong>
+                                [</strong> wartość domyślna <strong>]</strong> / flex-end / center / space-around /
+                            space-between / space-evenly;</p>
+                    </li>
+                    <li>
+                        <p><strong>align-content</strong>: stretch <strong>[</strong> wartość domyślna
+                            <strong>]</strong> / center / flex-start / flex-end / space-around / space-between;<i> -
+                                żeby align-content działał muszą być przynajmnej dwie linie elementów w kontenerze</i>
+                        </p>
+                    </li>
+                </ul>
+                <p><br></p>
+                <h4>FLEX ITEM (dziecko):</h4>
+                <ul>
+                    <li>
+                        <p><strong>flex-basis</strong>: auto <strong>[</strong> wartość domyślna <strong>]</strong> /
+                            x;<i> - określa rozmiar elementu. Przy "flex-dierction: row" odnosi się do width, a przy
+                                "flex-direction: column" do height. Ma pierwszeństwo przed właściwością width oraz
+                                właściwością height</i></p>
+                    </li>
+                    <li>
+                        <p><strong>flex-grow</strong>: 0 <strong>[</strong> wartość domyślna <strong>]</strong> / x;<i>
+                                - określa proporcję rozrostu elementu. Element urośnie jeśli w lini jest miejsce,
+                                powięklszy się do maks rozmiaru rodzica</i></p>
+                    </li>
+                    <li>
+                        <p><strong>flex-shrink</strong>: 0 / 1 <strong>[</strong> wartość domyślna
+                            <strong>]</strong>;<i> - określa proporcję kurczenia się elementu w stosunku do innych z tą
+                                własciwością ustawioną inaczej </i></p>
+                    </li>
+                    <li>
+                        <p><strong>order</strong>: 0 <strong>[</strong> wartość domyślna <strong>]</strong> / x;<i>z
+                                pomocą właściwości “order” możemy dowolnie zmieniać kolejność elementów w kontenerze</i>
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>align-self</strong>: auto <strong>[</strong> wartość domyślna <strong>]</strong> /
+                            stretch / flex-start / flex-end / center;<i> działa tak jak align-items, ale działą tylko na
+                                konkretny element bo nie stosujemy go na rodzicu tylko na danym elemencie</i></p>
+                    </li>
+                </ul>
+                <p><br></p>
+                <h4>Zapisy skrócone:</h4>
+                <ul>
+                    <li>
+                        <p><strong>flex</strong>: [grow] [shrink] [flex-basis];</p>
+                    </li>
+                    <li>
+                        <p><strong>flex-flow</strong>: [flex direcrion] [flex wrap]</p>
+                    </li>
+                </ul>
+                <p><br></p>
+                <h4>Przykłady:</h4>
+                <p><code>flex: 1 2 30px</code></p>
+                <p>to zapis skrócony dla:</p>
+                <div>
+                    <div>
+                        <pre><ol><li><span>flex</span><span>-</span><span>grow</span><span>:</span><span> </span><span>1</span><span>;</span></li><li><span>flex</span><span>-</span><span>shrink</span><span>:</span><span> </span><span>2</span><span>;</span></li><li><span>flex</span><span>-</span><span>basis</span><span>:</span><span> </span><span>30px</span><span>;</span></li></ol></pre>
+                    </div>
+                </div>
+                <p><br></p>
+                <p><code>flex-flow: row wrap</code></p>
+                <p>to zapis skrócony dla:</p>
+                <div>
+                    <div>
+                        <pre><ol><li><span>flex</span><span>-</span><span>direction</span><span>:</span><span> row</span><span>;</span></li><li><span>flex</span><span>-</span><span>wrap</span><span>:</span><span> wrap</span><span>;</span></li></ol></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div><br>
+</div>
+<div  class="main-box-in">
+  <img src="media/flexbox.png" alt="" style="border-radius: 25px">
+    <img src="media/flex1.jpg" alt="" style="border-radius: 25px">
+    <img src="media/flex2.jpg" alt="" style="border-radius: 25px">
+</div>

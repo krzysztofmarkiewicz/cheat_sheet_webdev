@@ -1,0 +1,356 @@
+<div class="main-box-in">BOOTSTRAP <br>
+    <a href="https://getbootstrap.com">getbootstrap.com</a> <br>
+    <a href="https://bs4.kursbootstrap.pl/tutorial/">bs4.kursbootstrap.pl</a>
+
+    <ol>
+        <li>
+            klasa <b>container</b> w bootstrapie jest wyśrodkowana <br>
+            klasa <b>container-fluid </b> jest rozciągnięta na całą szerokość strony
+        </li>
+        <li>div z klasą row ustawia wiersz i dzieli go na 12 kolumn</li>
+        <li>divy w row ustawiamy z klasa col-... z nr 1-12 i taym samym ustawiamy im proporcjonalna szerokosc</li>
+        <li>bootstrap jest oparty na flexboxie. Informacje o layoucie flex grid na stronie bootstrapa pod tym linkiem <a
+                href="https://getbootstrap.com/docs/4.4/layout/grid/">link do getbootstrap.com</a> oraz do <a
+                href="https://bs4.kursbootstrap.pl/siatka-grid-wprowadzenie/">polskiej storny z kursem bootstrap</a>
+        </li>
+        <li>działają te same właściwości co we flexie czyli align-items, justify, order itd</li>
+        <li>STYLIZACJA TEKSTU - info na <a
+                href="https://getbootstrap.com/docs/4.4/content/typography/">getbootstrap.com</a>
+            <ul>
+                <li>Można tworzyć nagłówki, bez podnoszenia wartości semantycznej. <br>tworzymy wtedy np. paragraf z
+                    klasą
+                    h1
+                </li>
+                <li>Mega duże nagłówki <br>
+                    tworzymy paragraf z klasą display(od 1 do 4)</li>
+                <li>dodanie do paragrafu czy spanu klasy "text-muted" wyszarza teks czyli stylizuje na wyciszony jakby
+                </li>
+                <li>dodanie do paragrafu czy spanu klasy "lead" pomniejsza tekst </li>
+                <li>tekst wyrównujemuy poprzez dodawanie klas np text-center, text-left, text-right</li>
+                <li>Bootstrap oferuje nam stylowanie elementami linowymi z html. Poniżej przykład <br>
+                    <img src="media/text_style_bootstrap.png" alt="" style="max-width: 100%;"> </li>
+            </ul>
+        </li>
+        <li>LISTY - info o listach na <a
+                href="https://getbootstrap.com/docs/4.4/content/typography/#lists">getbootstrap.com</a>
+            <ul>
+                <li>usuwanie stylu listy dodajemy klase "list-unstyled"</li>
+                <li>możemy ukłądać listy inlinowo <br>
+                    na rodzicu (ul, ol) ustwiamy klase "list-inline <br>na dzieciach (li) które chcemy ustawić w lini
+                    ustawiamy
+                    klasę "list-inline-item" <br>
+                    list-inline usuwa stylizacje listy (kropki, cyfry itd)</li>
+            </ul>
+        </li>
+        <li>OBRAZY - info o obrazach na <a href="https://getbootstrap.com/docs/4.4/content/images/">getbootstrap.com</a>
+            <ul>
+                <li>obrazek zniejsza się do szerokości dodajemy klase "img-fluid" (czyli ustwaia width-max:100%)</li>
+                <li>klasa "img-thumbnail" tez ustawia responsywnosc ale dodaje taką ramkę </li>
+                <li>opływanie tekst wokół obrazka. Do obrazka dodajemy klase "float-left" "float-right" <a
+                        href="https://getbootstrap.com/docs/4.4/utilities/float/"></a>getbootstrap.com</li>
+            </ul>
+        <li>TABELE <br>
+            bardzo fajne responhyswne tabele mozna robic <br>wszytskie ustwaienia dot tabel na stropnie <a
+                href="https://getbootstrap.com/docs/4.4/content/tables/">bootstrapa</a></li>
+
+        </li>
+        <li>KOLORY- info o kolorach na <a
+                href="https://getbootstrap.com/docs/4.4/utilities/colors/">getbootstrap.com</a>
+            <ul>
+                <li>primary</li>
+                <li>secondary</li>
+                <li>success</li>
+                <li>danger</li>
+                <li>warning</li>
+                <li>info</li>
+                <li>light</li>
+                <li>light</li>
+                <li>dark</li>
+                <li>white</li>
+                <li>transparent</li>
+                <li>
+                    <ul>examples
+                        <li>p class="text-primary"></li>
+                        <li>a href="#" class="text-secondary"</li>
+                        <li>div class="p-3 mb-2 bg-success text-white"</li>
+                        <li>.bg-gradient-warning</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li>CIENIE - info o cieniach na <a
+                href="https://getbootstrap.com/docs/4.4/utilities/shadows/">getbootstrap.com</a>
+            <ul>
+                <li>Cienie w bootstrapie są cienkie, lepiej do tego używać css</li>
+                <li>No shadow - usuwa cień jeśli np na rodzicu był ustawiony - dodajemy klasę "shadow-none"</li>
+                <li>Small shadow - mały cień - dodajemy klasę "shadow-sm"</li>
+                <li>Regular shadow - normalny cień - dodajemy klasę "shadow"</li>
+                <li>Larger shadow - duży cień - dodajemy klasę "shadow-lg"</li>
+
+
+            </ul>
+        </li>
+        <li>BORDER - info o borderach na <a
+                href="https://getbootstrap.com/docs/4.4/utilities/borders/">getbootstrap.com</a>
+        </li>
+    </ol>
+</div>
+<div class="main-box-in">
+    <ol start="13">
+
+        <li>DISPLAY - info o displayu na <a
+                href="https://getbootstrap.com/docs/4.4/utilities/display/">getbootstrap.com</a>
+            oraz na
+            <a
+                href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/learn/lecture/15638294#announcements">udemy</a>
+            <ul>
+                <li>tworzymy tak <br>
+                    .d-{value} for xs <br>
+                    .d-{breakpoint}-{value} for sm, md, lg, and xl. <br>
+                    exaplme:<code>div class="d-inline p-2 bg-primary text-white" </code>
+
+                </li>
+                <li>rodzaje: <br>
+                    none<br>
+                    inline<br>
+                    inline-block<br>
+                    block<br>
+                    table<br>
+                    table-cell<br>
+                    table-row<br>
+                    flex<br>
+                    inline-flex<br>
+                    example: <code>d-none .d-md-block .d-lg-none</code> - widoczny tylko na brekapoincie md
+                </li>
+                <li>display w wydruku
+                    .d-print-nonebr <br>
+                    .d-print-inline <br>
+                    .d-print-inline-block <br>
+                    .d-print-block <br>
+                    .d-print-table <br>
+                    .d-print-table-row <br>
+                    .d-print-table-cell <br>
+                    .d-print-flex <br>
+                    .d-print-inline-flex <br>
+                </li>
+            </ul>
+        </li>
+        <li>FLEX - info o flexboxie na <a href="https://getbootstrap.com/docs/4.4/utilities/flex/">getbootstrap.com</a>
+            <ul>
+                <li>Jeżlei chcemy żeby jakiś element wyświetlał się jako flex musimy mu nadac klase "flex" lub
+                    "inlone-flex.
+                </li>
+                <li>mozemy podawac takze breakpointy</li>
+                <li>działają wszystkie właściwości flexboxa</li>
+                <li>exaplme: <code>div class="d-flex align-content-sm-center bd-highlight"</code></li>
+                <li>exaplme: <code>div class="d-flex flex-column-reverse bd-highlight"</code></li>
+                <li>exaplme: <code>div class="d-flex justify-content-center"</code></li>
+
+            </ul>
+        </li>
+        <li>OVERFLOW</li><br>
+        dodajemy klase "overflow-auto" lub "overflow-hidden"
+        <li>POSITION - info o position na <a
+                href="https://getbootstrap.com/docs/4.4/utilities/position/">getbootstrap.com</a></li>
+        <br>
+        mamy posiotion takie jak w css <br>
+        dodajemy klase: <br>
+        "position-static" <br>
+        "position-relative"> <br>
+        "position-absolute"> <br>
+        "position-fixed"<br>
+        "position-sticky" <br>
+        "fixed-top" <br>
+        "fixed bottom" <br>
+        "sticky top"
+        <li>WIDTH/HEIGHT - info na <a href="https://getbootstrap.com/docs/4.4/utilities/sizing/">getbootstrap.com</a>
+            <ul>
+                <li>Mamy w bootstrapie "wstrzyknięte" 5 progów - 25%, 50%, 75%, 100% oraz auto</li>
+                <li>ustawiamy je dodajac klase np. w-100, h-25, w-auto itd </li>
+                <li>Mamy tez klasy do viewportu: <br>
+                    "min-vw-100" <br>
+                    "min-vh-100" <br>
+                    "vw-100" <br>
+                    "vh-100"
+            </ul>
+        </li>
+        <li>MARGIN/PADDING - info o marginesach i paddingach na<a
+                href="https://getbootstrap.com/docs/4.4/utilities/spacing/#how-it-works">getbootstrap.com</a> oraz na <a
+                href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/learn/lecture/15638306#announcements">UDEMY</a>
+            <ul>
+                <li>
+                    klase tworzymy w taki sposób <br> dla breakpointu xs {property}{sides}-{size} <br> dla breakpointów
+                    wyższych sm, md, lg, and xl {property}{sides}-{breakpoint}-{size}</li>
+                <li>Where property is one of: <br>
+                    <br>
+                    m - for classes that set margin <br>
+                    p - for classes that set padding</li>
+                <li>Where sides is one of: <ul>
+                        <li> t - for classes that set margin-top or padding-top</li>
+                        <li> b - for classes that set margin-bottom or padding-bottom
+                        </li>
+                        <li> l - for classes that set margin-left or padding-left
+                        </li>
+                        <li> r - for classes that set margin-right or padding-right
+                        </li>
+                        <li> x - for classes that set both *-left and *-right
+                        </li>
+                        <li> y - for classes that set both *-top and *-bottom
+                        </li>
+                        <li> blank - for classes that set a margin or padding on all 4 sides of the element
+                        </li>
+                    </ul>
+
+                <li>
+                    Where size is one of: (mnożnik REM - czyli jeśli w css ustawimy font size: 10px w tagu html to
+                    .25rem to
+                    jest 2.5px)
+                    <ul>
+                        <li>0 - for classes that eliminate the margin or padding by setting it to 0</li>
+                        <li> 1 - (by default) for classes that set the margin or padding to $spacer * .25
+                        </li>
+                        <li> 2 - (by default) for classes that set the margin or padding to $spacer * .5
+                        </li>
+                        <li> 3 - (by default) for classes that set the margin or padding to $spacer
+                        </li>
+                        <li> 4 - (by default) for classes that set the margin or padding to $spacer * 1.5
+                        </li>
+                        <li> 5 - (by default) for classes that set the margin or padding to $spacer * 3
+                        </li>
+                        <li>auto - for classes that set the margin to auto</li>
+                    </ul>
+                </li>
+                <li>example: <code>div class="mx-auto"</code> <br>
+                    example: <code>div class="px-md-5"</code> - w css przy byłoby: padding: 0 5rem; - ale tylko w
+                    breakpointcie md</li>
+                <li>jeśli chcemy ustawic padding lub margin chcemy nadac ujemny to przed mnoznikiem dodajemhy literkę n
+                    (od
+                    negative) </li>
+            </ul>
+        </li>
+
+    </ol>
+</div>
+<div class="main-box-in" style="height: 100px; border-bottom: 10px solid black;"></div>
+<div class="main-box-in" style="height: 100px; border-bottom: 10px solid black;"></div>
+
+<div class="main-box-in">
+    <h3>KOMPONENTY W BOOTSTRAPIE</h3>
+    <p> wszystkie komponenty na stronie <a href="https://getbootstrap.com">getbootstrap.com</a> (z
+        lewej
+        strony klimamy w components i rozwija się lista dostępmnych komponentów</p>
+    <p><a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/learn/lecture/15638314#announcements">Kurs
+            na UDEMY</a></p>
+    <p><a href="https://bs4.kursbootstrap.pl/">strona z kursem bootstrapa po polsku</a></p>
+    <ol>
+        <li>Alerts - alerty - służą do wplecenia w treść strony jakiegoś komunikatu czy dodatkowej informacji
+            <br><a href="https://getbootstrap.com/docs/4.4/components/alerts/">link do getbootstrap.com</a><br>
+            <a href="https://bs4.kursbootstrap.pl/alerty-alerts/">polski kurs</a></li>
+        <li>Badge - odznaki - wypisuje się w nich aktualnie włączone filtry wyszukiwania, widzimy je m.in. na FB
+            gdzie wyświetla się nam ilość powiadomień, w sklepach umieszcza się w nim tagi produktów
+            <br><a href="https://getbootstrap.com/docs/4.4/components/badge/">link do getbootstrap.com</a><br></li>
+        <a href="https://bs4.kursbootstrap.pl/odznaki-badges/">polski link</a>
+        <li>Breadcrumb - okruszki (ścieżka dostępu) - element nawigacyjny na stronie WWW. Dzięki nim możemy
+            wyświetlić użytkownikowi ścieżkę, którą przeszedł oraz miejsce w którym się aktualnie znajduje.
+            Okruszki pozwalają też łatwo cofnąć się użytkownikowi o kilka stron.
+            <br><a href="https://getbootstrap.com/docs/4.4/components/breadcrumb/">link do
+                getbootstrap.com</a> <br><a href="https://bs4.kursbootstrap.pl/kategoria/okruszki/">polski kurs</a>
+        </li>
+        <li>Buttons - przyciski
+            <br><a href="https://getbootstrap.com/docs/4.4/components/buttons/">link do getbootstrap.com </a><br><a
+                href="https://bs4.kursbootstrap.pl/grupy-przyciskow-button-group/">polski kurs</a>
+        </li>
+        <li>Button group - grupy przycisków - polega to na „złączenie” kilku przycisków w jeden element ale
+            zachowując możliwość kliknięcia w każdy z nich oddzielnie. Ten element znajduje zastosowanie między
+            innymi w sytuacji gdy mamy kilka sekcji i każda z nich posiada jakieś przyciski
+            <br><a href="https://getbootstrap.com/docs/4.4/components/button-group/">link do
+                getbootstrap.com</a> <br><a href="https://bs4.kursbootstrap.pl/grupy-przyciskow-button-group/">polski
+                kurs</a></li>
+        <li>Card - wykorzystać można między innymi do boksów na stronie głównej, listy wpisów, panelu bocznego z
+            różnymi widgetami, zespół w firmie itd
+            <br><a href="https://getbootstrap.com/docs/4.4/components/card/">link do getbootstrap.com</a><br>
+            <a href="https://bs4.kursbootstrap.pl/karty-cards/">polski kurs</a></li>
+        <li>Carousel - slider np ze zdjęciami
+            <br><a href="https://getbootstrap.com/docs/4.4/components/carousel/">link do getbootstrap.com</a><br><a
+                href="https://bs4.kursbootstrap.pl/slider-carousel/">polski kurs</a>
+        </li>
+        <li>Collapse - akordeon - pozwala nam na wyświetlenie treści jakiegoś diva dopiero po kliknięciu w
+            odpowiedni przycisk czy link. Jest to bardzo często używane przy tworzeniu sekcji FAQ gdzie
+            wyświetlamy tylko pytania a użytkownik po kliknięciu w nie uzyska odpowiedź.
+            <br><a href="https://getbootstrap.com/docs/4.4/components/collapse/">link do getbootstrap.com</a> <br><a
+                href="https://bs4.kursbootstrap.pl/akordeon-collapse/">polski kurs</a>
+        </li>
+        <li>Dropdowns - listy rozwijane - gdy wcisniesz przycisk to z niego rozija sie lista z innymi klikalnymi
+            linkami przyciskami
+            <br><a href="https://getbootstrap.com/docs/4.4/components/dropdowns/">link do getbootstrap.com</a><br>
+            <a href="https://bs4.kursbootstrap.pl/listy-rozwijane-dropdowns/">polski kurs</a>
+        </li>
+        <li>Forms - formularze
+            <br><a href="https://getbootstrap.com/docs/4.4/components/forms/">link do getbootstrap.com</a><br>
+            <a href="https://bs4.kursbootstrap.pl/dodatki-do-formularzy/">polski kurs</a></li>
+
+
+    </ol>
+
+</div>
+<div class="main-box-in">
+    <ol start=11>
+        <li>Input group - wystlizowane pod email, username, url itd
+            <br><a href="https://getbootstrap.com/docs/4.4/components/input-group/">link do getbootstrap.com</a>
+        </li>
+        <li>Jumbotron - taki jakby telebim. Służy do wyróżniania elementów na stronie. Tworząc komercyjne strony
+            stosujemy elementy „CTA – Call to action”, które zachęcają klienta do skontaktowania się z nami czy
+            zamówienia produktu, który jest obecnie w promocji lub jakiejś innej akcji, która była by dla nas
+            pożądana.
+            <br><a href="https://getbootstrap.com/docs/4.4/components/jumbotron/">link do getbootstrap.com</a><br>
+            <a href="https://bs4.kursbootstrap.pl/jumbotron/">polski kurs</a>
+        </li>
+        <li>List group - listy (różne rozwiązania)
+            <br><a href="https://getbootstrap.com/docs/4.4/components/list-group/">link do getbootstrap.com</a><br>
+            <a href="https://bs4.kursbootstrap.pl/listy-list-group/">polski kurs</a>
+        </li>
+        <li>Media object - Element "media" można wykorzystać jako szablon komentarzy, listę z miniaturką np.
+            artykułów czy galerii zdjęć, czytnik RSS czy tweetów
+            <br><a href="https://getbootstrap.com/docs/4.4/components/media-object/">link do
+                getbootstrap.com</a><br> <a href="https://kursbootstrap.pl/element-media/">polski kurs</a></li>
+        <li>Modal - pop-up - Wyskakujące okienka, okna pop-up, modal, lightbox – wiele nazw tego samego elementu
+            czyli okna, które pojawiając się przysłania nam aktualną stronę
+            <br><a href="https://getbootstrap.com/docs/4.4/components/modal/">link do getbootstrap.com</a> <br><a
+                href="https://bs4.kursbootstrap.pl/pop-up-modal/">polski kurs</a></li>
+        <li>Navs - nawigacje/zakładki (nie główna nawigacja) takie na podstronach, element w którym widzimy
+            jeden tekst/obrazek/cokolwiek i możemy przełączać się pomiędzy innymi bez przeładowywania strony
+            <br><a href="https://getbootstrap.com/docs/4.4/components/navs/">link do getbootstrap.com</a> <br><a
+                href="https://kursbootstrap.pl/zakladki-nav-tabs/">polski kurs</a></li>
+        <li>Navbar- główna nawigacja
+            <br><a href="https://getbootstrap.com/docs/4.4/components/navbar/">link do getbootstrap.com </a><br><a
+                href="https://kursbootstrap.pl/gorne-menu-strony/">polski kurs</a></li>
+        <li>Pagination - prev, next i cyfry ze stronami - wykorzystywane w blogach albo na dole forum
+            <br><a href="https://getbootstrap.com/docs/4.4/components/pagination/">link do getbootstrap.com
+            </a><br><a href="https://bs4.kursbootstrap.pl/paginacja-pagination/">polski kurs</a>
+        </li>
+        <li>Popovers - komunikaty, dymki ktore wyskakują po kliklnięciu
+            <br><a href="https://getbootstrap.com/docs/4.4/components/popovers/">link do getbootstrap.com</a> <br><a
+                href="https://bs4.kursbootstrap.pl/komunikaty-popovers/">polski kurs</a>
+        </li>
+        <li>Progress - paski postępu - spotkamy je m.in. w kilkuetapowych formularzach na przykład w sklepach
+            internetowych podczas przechodzenia przez etapy zakupu lub przy zakładaniu kont w serwisach
+            internetowych
+            <br><a href="https://getbootstrap.com/docs/4.4/components/progress/">link do getbootstrap.com</a><br> <a
+                href="https://bs4.kursbootstrap.pl/paski-postepu-progress/">polski kurs</a>
+        </li>
+        <li>Scrollspy - podczas przewijania, przełączają się np zakladki w menu, uzytkownik wie gdzie sie
+            obecnie znajduje
+            <br><a href="https://getbootstrap.com/docs/4.4/components/scrollspy/">link do getbootstrap.com</a>
+        </li>
+        <li>Spinners - elemnt ruchomy np podczas ladowania, np krecące się kółeczko
+            <br><a href="https://getbootstrap.com/docs/4.4/components/spinners/">link do getbootstrap.com</a>
+        </li>
+        <li>Toasts - okienko z powiadomieniem, ktpore moze byc wylaczcone
+            <br><a href="https://getbootstrap.com/docs/4.4/components/toasts/">link do getbootstrap.com</a></li>
+        <li>Tooltips - dymek ktory wyskakuje po najechaniu kursorem
+            <br><a href="https://getbootstrap.com/docs/4.4/components/tooltips/">link do getbootstrap.com</a>
+        </li>
+    </ol>
+
+</div>

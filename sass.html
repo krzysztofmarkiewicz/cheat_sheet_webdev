@@ -1,0 +1,74 @@
+<div class="main-box-in">
+    <h1><a href="https://sass-guidelin.es/pl/#top" target="_blank">Szczegółowa strona o SASS na</a></h1>
+    <h2><a href="https://grafmag.pl/artykuly/wstep-do-sass-prepreocesora-jezyka-css " target="_blank">Super wstęp do
+            SASS na
+            grafmag.pl</a></h2>
+    <h2><a href="https://sass-lang.com" target="_blank">DOKUMENTACJA SASS</a></h2>
+    <hr>
+    <h3>ZMIENNE</h3>
+    <p> zmienne zapisujemy na górze pliku sass, a nazwę z zmiennej zapisujemy poprzedzając "$"(example:"$first-color:
+        white") <br>
+        do zmiennej odwołujemy się w wpisując jako wartość właściowosci "$nazwa zmiennej"
+        (example:"$first-color")) <br>
+        w pliku css ktory generuje sie z sass nie ma wzmiamnki o zmiemnnej, tylko elememnty ze zminna sa opisane
+        konkretna wlasciwoscia. Nie powoduje to wtedy problemu z nieobslugiwanymi przegladarkami
+    </p>
+    <p><i>example <br>
+            SASS: <br>
+            $first-color: white <br>
+            . <br>
+            . <br>
+            ".click-btn br
+            &nbsp;&nbsp;&nbsp;&nbsp; color:$first-color <br>
+            w pliku css kod generuje się jako <br>
+            .click-btn
+            {color: white}</i></p>
+    <hr>
+    <h3>Mapy</h3>
+    <p>To są zmienne. Działąją tak jakby kontenery na zmienne <br>
+        Tworzymy zmienną a potem w nawiasie podajemy wartości, ale wszystko musi być w jednej linii. w odwołaniu musimy
+        wpisać map-get($nazwa_zmiennej, wartość)<br>
+        example "$colors: (top: gold,center: lime,bottom: tomato)" <br>
+        .<br>.<br>
+        .div1 <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;color: map-get($colors, top) <br>
+        .div2 <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;color: map-get($colors, center) <br>
+        .div2 <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;color: map-get($colors, bottom) <br>
+
+
+        <a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/learn/lecture/15362016#overview"
+            target="_blank">Link
+            do
+            UDEMY</a></p>
+</div>
+
+
+<div class="main-box-in">
+    <h3>Mixin</h3>
+    <p>Mixin tworzymy tak "@mixin nazwa" Nazwa może być dowolna ale dobrze zeby odzwierciedlała do czego ten mixin
+        służy. np dla jakichś dodatków "@mixin addons". Pod nim wpisujemy wlasciowosci
+        Do mixina odowłujemu się tak podajac właściwość @include <br>
+        <br>
+        .div1 <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;width: 200px <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;height: 200px<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@include addons<br><br>
+
+        @mixin trzymamy na gorze pliku sass. @include musi być poniżej linii @mixin <br>
+
+        <a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/learn/lecture/15362022#overview"
+            target="_blank">Link
+            do
+            UDEMY</a></p>
+    <hr>
+    <h3>IMPORT</h3>
+    <p>WAŻNE poczytać <br>
+        "@import nazwa_pliku"
+
+        <a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/learn/lecture/15362030#overview"
+            target="_blank">Link
+            do
+            UDEMY</a></p>
+</div>

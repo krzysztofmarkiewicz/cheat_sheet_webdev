@@ -1,0 +1,437 @@
+<div class="main-box-in">
+    <h3>DOBRE PRAKTYKI PISANIA KODU</h3><a
+        href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14928164#overview">LINK
+        DO UDEMY</a><br>
+    <ol>
+        <li>Odpowiednia struktura HTML</li>
+        <li>RWD</li>
+        <li>Dbanie o czystość w kodzie
+            <ul>
+                <li>usuwać zbędne odstępy w kodzie</li>
+                <li>odpowiednie wcięcia w kodzie</li>
+                <li>ustawianie właściowości w selektorach w css
+                    <ul>
+                        <li>pozycjonowanie elementu czyli na górze position, potem top, left itd, następnie
+                            transform</li>
+                        <li>wymiary elementu - display, wyskosc, szerokosc itd</li>
+                        <li>stylizowanie czyli bgc, kolory, bordery, shadowy itd </li>
+                        <li>dodatkowe czyli transition, cursor, animation itd</li>
+                    </ul>
+                </li>
+                <li> nazywanie slektorów (przykład zły "btn1" luib "btn1", przykład dobry "btn-start" lub
+                    "btn-share")</li>
+                <li>komemntarze (dobry pomysł to opisywanie kometarzami sekcji na stronie)</li>
+            </ul>
+        </li>
+        <li>BEM (blok element modifier- metodologia, która pozwala pisać lepszy kod, składający się z różnych
+            komponentów. Przeażnie przy większych projektach, gdy np pracujemy w grupie</li><a
+            href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14928172#overview"
+            target="_blank">Link
+            do Udemy</a><br>
+        <a href="https://getbem.com" target="_blank">Stropna oficjalna metodologii BEM getbem.com</a>
+        <li>Ustawić na stałe font w tagu html, a potem ustalać wielkość fontó∑ poprzez "rem". Pomaga to tworzyć
+            strony responsywne </li>
+        <li>Podstrony które się uzupełniają odpowiednio (np manu się zmienia na wszystkich, czy footer itd tworzymy
+            nastepująco
+            <ul>
+                <li>tworzymy plij js z odpiwiednim skryptem</li>
+                <li>na dole strony strony od razu nad tagiem "/body" podajemy dwa skrypty <br>
+                    jeden tworzymy srcipt:scr do pliku .js<br>
+                    drugi script do wywyoływania funkcji z tego skryptu</li>
+                <li>tworzymy pliki html odpowiednie pod nasze np footer lub nav itd</li>
+                <li>ww odpowiednich miejscach strony wklejasz diva z odnosnikiem do danego pliku html (np
+                    footer.html czy nav.html</li>
+                <li><a
+                        href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/16620522#overview">FILM
+                        na UDEMY JAK TO ZROBIĆ</a> </li>
+                <li><a href="https://www.w3schools.com/howto/howto_html_include.asp">LINK DO W3SCHOLS</a></li>
+            </ul>
+        </li>
+        <li>Ustawienia pod rensponsywność
+            <br><br>
+
+            <ul>
+                <li>// Small devices (landscape phones, 576px and up) <br>
+                    <b>@media (min-width: 576px) { ... }</b></li>
+                <li>// Medium devices (tablets, 768px and up) <br>
+                    <b>@media (min-width: 768px) { ... }</b></li>
+                <li> // Large devices (desktops, 992px and up) <br>
+                    <b>@media (min-width: 992px) { ... }</b></li>
+                <li>// Extra large devices (large desktops, 1200px and up) <br>
+                    <b>@media (min-width: 1200px) { ... }</b></li>
+            </ul>
+        </li>
+        <li>Aby obszer klikalnhy był większy, należy dodać padding</li>
+        <li>Jeżeli coś wystaje poza box dodajemy overflow:hidden</li>
+        <li>Wielkość zdjęć pod daną wielkość ekranu</li>
+        <li>OPTYMALIZACJA<a
+                href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/learn/lecture/15365616#overview">udemy</a><br><b>BARDZO
+                WAŻNA DLA OPTYMALIZACJI</b> jest żeby stylować przez transform i opacity <a
+                href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/learn/lecture/15365746#overview">szczegółowo
+                na udemy</a></li>
+
+        <li></li>
+    </ol>
+
+    <hr>
+
+    <h3>Jednostki</h3>
+    <p>px - ustala szerokość lub wysokość obiektu w pikselach
+        <br><br> % - ustawia szerokość lub wysokość obiektu procentowo w stosunku do szeroko <br><br> vh - ustala
+        wysokość strony i procentowo ustawia szerokość lub wysokość obioektu
+        <br><br> vw - ustala szerokość sstrony i procentowo ustawia szerokość lub wysokość obioektu
+        <br><br> rem - jenostka dla fontów - ustawia wielkość fontu jako iloczyn wielkości fontu ustalonego w
+        najważniejszym tagu (html) lub pseudoklasie (:root)
+        <br><br> em - jenostka dla fontów - ustawia wielkość fontu jako iloczyn wielkości fontu ustalonego w
+        "rodzicu"<br>
+    </p>
+    <hr>
+    <h3>Układ CSS</h3>
+    <ol>
+        <li>linki zewnętrze</li>
+        <li>nasz plik CSS </li>
+        <li>tag style </li>
+        <li>style liniowe (w tagach)</li>
+
+    </ol>
+    <hr>
+    <h3>Ważność w CSS (selektory)</h3>
+    <ol>
+        <li>styl liniowy</li>
+        <li>ID</li>
+        <li>klasy</li>
+        <li>tag HTML</li>
+    </ol>
+    <p>
+        <i>Jest jeszcze opcja !important oraz pseudoklasa :root</i>
+    </p>
+    <hr>
+    <h3>Kombinatory <a
+            href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14906558#overview"
+            target="_blank">LINK
+            DO UDEMY</a></h3>
+    <p>Kombinator ">" w CSS (np "div > P") odwołuje się tylko do bezpośrednio zagnieżdzonych elementów, pomija kolejne
+        zagnieżdżenia (w tym przykładzie do paragrafów bezpośerdnich dzieci diva )
+    </p>
+    <p>Kombinator "+" w CSS (np "div + P") odwołuje się do elementu następującego po danym elemencie (wg tego przykładu
+        pierwszy P po DIV będzie stylizowany, ale tylko jeśli jest od razu po divie i na tym samym poziomie
+        (rodzeństwo))
+    </p>
+    <p>Kombinator "~" w CSS (np "div ~ P") podobnie jhak z plusem ale odwołuje się do wszystkich elementó następujących
+        po danym elemencie(wg tego przykładu wszystkie P po DIV będzie stylizowany, jeżeli są na tym samym poziomie
+        (rodzeństwo))
+    </p>
+    <hr>
+    <h3>Box model - modelowanie boxów
+        <a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14916452#overview"
+            target="_blank">LINK
+            DO UDEMY</a></h3>
+    <p>
+        "box-sizing: content-box" - element rośnie razem z dodawanymi paddingami iborderami
+    </p>
+    <p>
+        "box-sizing: border-box" - wielkość elementu ustalowa nie zmienia się podczas zmianm paddingów i borderów.
+        Zmienia się wnętrze contentu
+    </p>
+    <img src="media/boxsizing.png" alt="">
+    <hr>
+    <h3>Overflow
+        <a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14916468#overview"
+            target="_blank">LINK
+            DO UDEMY</a></h3>
+    <p> Usuwa tekst albo dodaje scrola jesli tekst nie mieści się w elemencie <br>
+        <i>overflow: hidden; - ukrywa tekst ktory sie nie miesci </i><br>
+        <i> overflow: auto; - dodaje scrolla do przewijanis</i>
+
+    </p>
+    <hr>
+    <h3>Linki - stylizowanie
+        <a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14916502#overview"
+            target="_blank">LINK
+            DO UDEMY</a></h3>
+    <p> text-decoration: none; usuwa stylizowanie <br><br>
+        <i>a:link; - link nie klikany <br>
+            a:visited; - link kliknięty <br>
+            a:hover; - podświetlanie linku podczas najeżdzania kursorem <br>
+            a:active; - klikany link (podczas wciskania)</i> <br><br>
+
+        WAŻNE!! Zachować kolejność tak jak podana powyżej podczas stylizowania (bez względu na to z której kpseudoklasy
+        korzystamy)
+
+
+    </p>
+
+    <hr>
+    <h3>Przyciski - stylizowanie
+        <a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14916506#overview"
+            target="_blank">LINK
+            DO UDEMY</a></h3>
+    <p> pseudoklasa <br>
+        <b>:hover</b> - odpowiada za to co dzieje się podczas najeżdzania kursorem na obiekt <br>
+        <b>transition </b> - określa czas w którym ma się akcja wykonać, można animować konkretne wlaściwości (np:
+        transition: background-color 3s, box-shadow 3s) <br>
+        <img src="media/transition.png" alt="">
+
+    </p>
+    <hr>
+    <h3>UKRYWANIE I POJAWIANIE SIĘ ELEMENTÓW
+        <a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14916506#overview"
+            target="_blank">LINK
+            DO UDEMY</a></h3>
+    <P>w tym samym filmie co stylizowanie buttonów</P>
+    <p>
+        Przykład 1
+        podczas najeżdzania na jakiś element znika inny elememnt <br>
+        8:30 w filmie <br>
+        ELEMENT:hover [KOMBINATOR] ELEMENT <br>
+        np: span: hover + div (najeżdzasz na span a pojawia sie div ktory jest bezposrednim rodzenstwem)
+
+
+        <br> Przykład2
+        podczas najeżdzania obiekt zmienia właściwości np. przy menu
+        <i> <br><br> div{ <br>
+            width: 50px; <br>
+            height: 50px; <br>
+            transition: .3s; <br>
+            } <br>
+            div:hover{ <br>
+            width: 400px; <br>
+            height:1000px; <br>
+            }
+        </i>
+    </p>
+    <hr>
+    <h3>Display inline, inline-block oraz block
+        <a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14916520#overview"
+            target="_blank">LINK
+            DO UDEMY</a></h3>
+
+    <p>Wielkość mnożna zmieniać tylko elementom blokowym (np. div p), a elementom liniowym nie m ożna zmieniać .
+        Wyjątkiem jest IMG. Jest to obiekt liniowy, ale można go modelować.
+    </p>
+    <i>display: block - </i>zmienia obiekt liniowy w blokowy (np. span zachowuje sie jak obiekt blokowy) <br>
+    <i>display: inline-block - </i> obiekt zachopwuje się jak blokowy ale układa się liniowo (mozna np ustawic spany
+    jako blokowe ale ustawic je obok siebie<br>
+    <i>displahy: inline - </i>
+    <hr>
+    
+</div>
+
+
+
+<div class="main-box-in">
+    <h3>POSITION
+        <a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14916534#overview"
+            target="_blank">LINK
+            DO UDEMY</a></h3>
+
+    <p>W POSITION przy określaniu pozycji możemy się odwoływać do 4 właściowosci czuli TOP;RIGHT;BOTTOM;LEFT oraz osi Z
+        czyli "z-index". Używamy tylko dwóch wlasciowosc (mnp left i bottom) to logiczne
+    </p>
+    <p><b>relative </b>- przy relative ustalamy o ile przesuwamy element ale względem jego oryginalnej pozycji<br><br>
+        <b>abslotute </b> - ustalamy pozycję elementu względem najbliższego rodzica który, ma ustalony position
+        (relative liub
+        absolute) aż do BODY <br><br>
+        <b>fixed</b>- ustalamy pozycję względem okna przeglądarki. WAŻNE!! niektóre właściwości CSS w połączeniu z
+        "postgion: fixed" wyłączająm lub zakłucają działanie fixed. <br><br>
+        <b>sticky - </b> taki fixed tylko ze fajniejszy. Obiekt wisi w obekcie w którym się znajduje na swoim miejscu a
+        jeśli ruszymy stroną to przesuwa się razem z rodzicem ale zatrzymuje się w stosun ku do strony . Jeśli jednak
+        rodzic się chowa to obiekt ze sticky chowa się razem z nim<br>Świetnie to opisano w tym filmie <a
+            href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14927830#overview"
+            target="_blank">LINK DO UDEMY</a> <br>
+        Przyskład zastosowania sticky <br>
+        <img src="https://gedd.ski/img/sticky/moves.gif" alt=""> <br>
+
+
+    </p><br>
+    <b>static - </b> podstawowa wlasciowosc obiektow <br><br>
+
+    <p style="color: red; font-weight: bold;">MOŻNA WYŚRODKOWAĆ ELEMENT <br>
+        Ufunkcja calc <br>
+        przykład wysrodkowania jednego elementu w lini: <br>
+        <i>position:absolute; <br>
+            left: calc(50% - (połowa szerokości obiektu)px)</i>
+        <br>
+        LUB <br>
+        tranformem <br>
+        ustawiamy np. <i>position:absolut top:50% left:50% i transform: translate(-50%, -50%)</i><br><br>
+        podczas pisania kodu między blokami czasem pojawia się odstep, spowodowanmy tym ze kolejne linie tekstu sa w
+        nastep[nych liniach. trzeba wtedy utawic na rodzicu "font-size:0" <br>
+    </p>
+    </p>
+    <hr>
+    <h3>TRANSITION
+        <a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14928076#overview"
+            target="_blank">LINK
+            DO UDEMY</a></h3>
+
+    <p>np. <b> transition: .3s - </b>wersja skrócona <br>
+        <b> transition: all 0s ease 0s;</b> <br>br
+        szczegółowo <br>
+        <b> transition-property: all </b>- jakie właściwości danego obiektu animujemy (może być kilka np. width .3s,
+        color .9s
+        itd)<br>
+        <b> transition-duration: 0s </b>- jak długo animacja bnędzie trwałą<br>
+        <b> transition-timing-funtion: ease </b>- jest klika rodzajów. Automatycznie ustwaiany jest "ease", ale są
+        również inne. Najlepiej potestować albo zerknąć na film po tym <a
+            href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14928082#overview">linkiem</a>
+        <br>
+        <b> transition-delay: 0s - opóźnienie (można wywoływać anmacje z opóźnieniem</b><br>
+
+    </p>
+    <hr>
+    <h3>TRANSFORM
+        <a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14928086#overview">LINK
+            DO UDEMY</a></h3>
+
+    <p>Mamy 4 podstawowe właściwości oraz np. transform: prespecite / matrix które służą do przekształcania <br>
+        <b>transform: translate - </b>przesuwanie elementu względem osi x i y. <br> ZA POMOCĄ TRANSFORN:TRANSLATE
+        WYŚRODKOWYJEMY ELEMENTY NA STRONIE.<br>
+        ustawiamy np. <i>position:absolut top:50% left:50% i transform: translate(-50%, -50%)</i><br>
+        <b> transform: scale - </b> służy do zmiany wielkości elementu <br>
+        <b> transform: rotate</b> przekształca obiekt (obraca, pochyla) względem osi x,y,z. Podajemy w stopniach "deg".
+        np "tranform:rotateY(180deg)<br>
+        <b> ransform: scew - </b>pochyla (np robi romb z kwadrata) względem ozi x i y. Też podajemy w stopniach
+        (deg)-<br><br>
+        TRANSFORM ORIGIN - usgtalamy punkt względem którego będzie animowany obiekt (domyślnie ustawiony jest na (50%
+        50%))<a
+            href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14928088#overview">LINK</a>
+        <br>
+
+    </p>
+    <hr>
+    <h3>BACKGROUND
+        <a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14928108#overview">LINK
+            DO UDEMY</a></h3>
+
+    <p>
+        <b>background: - </b><br>
+        <b>background-color -</b><br>
+        <b>background-image - </b>Mozemy podać odnośnik do obrazka lub zastosować gradient. Można nakłądać warstwy,
+        czyli kilka obrazów albo gradientów jedno na drugim<br>
+        <b>background-repeat - </b> standardowo ustawione na repeat. Można zmienić na no-repeat czyli obraz nie będzie
+        powtarzany. Sa jeszcze inne.<br>
+        <b>background-position - ustawianie pozycji tła. Można podać wartości dla osi X i y, lun ustalić na top, left,
+            center itd</b><br>
+        <b>background-size - </b> wartość contain skaluje bcg do szerokści strony, auto to wielkość org, cover
+        rozciaga<br>
+        <b>background-attachment - </b>
+        <br> wartość scroll - w obiekcie czcionka sie przewija ale tło stoi, i gdy przesuwamy stronę tło porusza się
+        razem z czcionką<br>
+        <br> wartość fixed -w obiekcie czcionka sie przewija ale tło stoi, ale gdy przesuwamy stronę tło stoi a czcionka
+        się porusza <br>
+        <br> wartość local -<br>
+    </p>
+    <hr>
+    <h3>RWD - Responsice Web Design
+        <a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14928120#overview">LINK
+            DO UDEMY</a></h3>
+
+    <p>
+        <b>Tworzeni stron responsywnych czyli dostosowanych do różnych urządzeń np desktopów i mobilnych</b><br>
+        WAŻNE HASŁA i INFORMACJE: <br><br>
+        Pixel Pixelowi nie równy (mimo ze nasze telefonu maja fullhd czy 4k to co innego niż fhd czy 4kna monitorze)
+        <br><br>
+        metatag viewport - dzięki niemu stronu dostosowują się do ekranu<br><br>
+        Mobile FIRST - stronę zawsze zaczynamy budować od wersji mobilne <br><a
+            href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14928152#overview">LINK
+            DO UDEMY DLACZEGO MOBILE FIRST JEST TAKIE WAŻNE</a>
+        <br><br>
+        Mamy tryb landscape (szersdzy niz wyzszy) i portrait (ekran wezsz niz wyszszy) <br><br>
+
+        @media queries <br> <a
+            href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/14928140#overview">link
+            do udemhy</a> <br><a href="https://developer.mozilla.org/pl/docs/Web/CSS/@media">link do mdn</a><br> <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media">Link do mdn wersji angiejskiej, są tam
+            opisanem różne ficzery</a><br><br>
+    </p>
+    <hr>
+    <h3>ZMIENNE</h3>
+    <p>zmienne zapisujemy na górze pliku CSS w pseudoklasie ":root" <br>
+        nazwę z zmiennej zapisujemy poprzedzając "--" (example:"--first-color: white") <br>
+        do zmiennej odwołujemy się wpisując jako wartość właściowosci "var(--nazwa zmiennej)"
+        (example:"var(--first-color")) <br>
+        zmienne w .sass na tej stronie <a href="sciaga_sass.html">Ściąga SASS</a>
+    </p>
+    <hr>
+    <h3>pseudo klasy i pseudo elementy</h3>
+    <p>
+        klasa w css - ".nazwa-klasy" <br>
+        pseudoklasie ":nazwa-pseudo-klasy" <br>
+        pseudoelement - "::nazwa-pseudo-elementu"
+        <a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/learn/lecture/15362058#overview">link
+            do udemy</a>
+        <br>
+        <h4>PSEUDO KLASY</h4>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">LINK DO MDN</a>
+        <b>:first-child</b> - odnosi się do pierwszego dziecka i jesli jest danym elementem to go stylizuje <br>
+        <b>:last-child</b> - - odnosi się do ostatniego dziecka i jesli jest danym elementem to go stylizuje <br>
+        <b>:first-of-type</b> - odnosi się do pierwszego z tego typy w każdym elememncie <br>
+        <b>:last-of-type</b> - odnosi się do ostatniego z tego typy w każdym rodzicu <br>
+        <b>:nth-child(liczba-nr dziecka)</b> - odnosi się do dziecka o nr podanym w nawiasie. mozliwe rowniez wartości
+        (odd-nieparzyste, even-parzyste, wielokrotniość np 3n-czyli 3*n, mozna tez podac w nawiasie np (3n+1) <br>
+        <i>np. 2n=2 * n <br>
+            n = 0 do nieskonczonosci</i>
+        <br>
+        <b>:nth-last-child(liczba-nr dziecka)</b> - to samo co ":nth-child" tylko liczone od tyłu <br>
+        <b>:nth-of-type(liczba-nr dziecka)</b> - <br>
+        <b>:nth-last-child(liczba-nr dziecka)</b> - <br>
+        poczytać o różnicach w necie <br><br>
+        <h4>PSEUDO ELEMENTY</h4>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements">LINK DO MDN</a>
+        <b>::after</b> - dodajemy właściwość "content" i po elemencie pojawia się wartość liniowo, którą możemy również
+        stylować. Dodaje się to wewnątrz elementu (nie można tej treści zaznaczyć jak tekstu) <br>Można np w divie dodać
+        pusty content, ustawić display block, ustwaić jego wwymiary i pojawi się taki element wewn tego diva<br><br>
+        <b>::before</b> - to samo co ::after tylko przed elementem<br>
+
+    </p>
+    <hr>
+    <h3>Atrybuty</h3>
+    <p><a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/learn/lecture/15412304#overview">link
+            do udemy</a> <br>
+        Atrybuty służą do dowołania się do konkretnego atrybutu. Wpisujemy to w "[]". <br> exaple: [href] lub
+        [href='cnn.com']
+        <br><br>
+        other examples <br>
+        [class='nazwa-klasy'] <br>
+        [class*='test'] dodając "*" przed rownasię będziemy wyszukiwać np klasy w której zwaratość jest ciąg znaków
+        "test", nawet gdy nazwa klasy to bedzie np "test-435" lub "44testuu"<br>
+        p[class*='nazwa-klasy'] przeszukuje klase ale tylko w paragrafach<br>
+        <a href="https://css-tricks.com/almanac/selectors/a/attribute/">Można korzysztać z innych selektorów niż "*".
+            Pomocny link na css-tricks.com</a>
+    </p>
+
+
+    <hr>
+    <h3>Animacje</h3>
+    <p><a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/learn/lecture/15412304#overview">link
+            do udemy</a> <br>
+        <h4>Reguła @keyframes</h4>
+        <p><a href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/learn/lecture/15364606#overview">link
+                do udemy</a> <br>
+            Służy do precyzyjnej kontroli nad przebiegiem animacji <br>
+            <a href="http://www.kurshtmlcss.pl/kurs-css/lekcja20-animation-@keyframes.php" target="_blank">dodatkowe
+                informacje</a>
+            <br><br>
+            Tworzymy regułę keyframes. Potem w danym elememncie odwołujemhy się do tego poprzez właściwość animation.
+            W animation najwążniejsz edwie pierwsze właściwości to nazwa animacji do które się odwołujemy (keyframes)
+            oraz czas trwania. Potem możemy stosować kilka dodatkowych opisanych tu <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">mdn</a> tu w
+            pl <a href="http://www.kurshtmlcss.pl/kurs-css/lekcja20-animation-@keyframes.php">kurshtmlcss.pl</a> <br>
+            animation: nazwa / czas / timing-funktion / delay / il. powtórzeń / fill mode <br><br>
+            Można podać keyframes w dwóch breakpointach "from" i "to" zamiast 0% i 100%.
+            <br><br>
+
+            właściwość <b> fill-mode </b>- określia w jaki sposób interesujący nas element HTML może otrzymywać
+            dodatkowe właściwości CSS od animacji, którą posiada. Mowa tu o momencie, gdy animacja elementu HTML nie
+            rozpoczęła się jeszcze wykonywać lub gdy animacja elementu HTML zakończyła już swoje wykonywanie się.
+            <a href="https://webkod.pl/kurs-css/wlasciwosci/animacja/animation-fill-mode">webkod.pl</a>
+            <a
+                href="https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/learn/lecture/15365238#overview">udemy</a><br><br>
+
+
+
+
+        </p>
+        <hr>
+</div>
