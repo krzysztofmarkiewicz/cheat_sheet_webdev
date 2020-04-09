@@ -2,7 +2,7 @@
 
 ## Strona utworzona na własne potrzeby, jako notatki z kursów frontendowych.
 
-###This project is private.
+### This project is private.
 
 Website project [here](https://github.com/krzysztofmarkiewicz/cheat_sheet_webdev)
 
