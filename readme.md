@@ -1,9 +1,11 @@
-#Cheat Sheet for coding beginners
+# Cheat Sheet for coding beginners
 
-##Strona utworzona na własne potrzeby, jako notatki z kursów frontendowych.
+## Strona utworzona na własne potrzeby, jako notatki z kursów frontendowych.
+
+### This project is private.
 
 Website project [here](https://github.com/krzysztofmarkiewicz/cheat_sheet_webdev)
-This project is private.
+
 
 Website only in polish version
 --
