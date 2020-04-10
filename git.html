@@ -1,162 +1,189 @@
-<p class="heading">GIT</p><br>
-<a href="/moje_projekty/cheat_sheet/media/teoria_git_samuraj.pdf"> PLIK PDF TEORIA UDEMY</a><br>
-<a href="https://git-scm.com/book/pl/v2/Pierwsze-kroki-Wprowadzenie-do-kontroli-wersji">Instrukcja gita</a><br>
-<a href="https://www.udemy.com/course/kurs-git-i-github-od-podstaw/learn/lecture/13928492#overview">Kurs Samuraja
-	UDEMY</a><br>
-<a href="https://www.samouczekprogramisty.pl/poczatki-pracy-z-wierszem-polecen/">początki z wierszem polecen</a><br>
-<a href="https://onlywei.github.io/explain-git-with-d3/#rebase">narzedzie ktore pozwoli zrozumiec jak dziala git</a><br>
-<a href="https://codecouple.pl/2016/02/11/gitflow-workflow-model-pracy-z-gitem/">Gitflow Workflow – model pracy z Git’em</a> <br>
-<p>terminal</p>
-<p>komendy w terminalu</p>
-<ul>git 
-	<li>clear - czysci ekran terminala</li>
-	<li>pwd - wyswietla sciezke w ktorej sie znajdujemy</li>
-	<li>mkdir - tworzy folder</li>
-	<li>touch - tworzy plik</li>
-	<li> >> - tworzy plik (można użyc jednego nawiasu > ale jesli mamy juz plik o takiej nazwie zostanie on nadpisany
-	</li>
-	<li> echo "jakas treść" >> nazwa_pliku - tworzy plik i umieszcza w nim tresc z cudzyslowia</li>
-	<li>rm - usuwa plik (np "rm *.html" usunie wsztkie pliki z rozszerzeniem html</li>
-	<li>rm -r nazwa folderu - usuwa folder</li>
-	<li>cp - kopiuje plik z obecnego folderu do folderu wskazanego</li>
-	<li>cp -r - kopiuje folder</li>
-	<li>mv - kopiuje (mv plik.txt /katalog/configi/) lub zmienia nazwe (np mv nazwa_obecna nowa_nazwa)
-	<li>cd .. - przenosi do katalogu nadrzędnego (o jeden folder wyzej)</li>
-	<li>cd - przenosi nas do katalogu domowego (głównego)</li>
-	<li>cd ~ - </li>
-	<li>rożnica miedzy cd a cd ~ - Wykonanie obydwóch poleceń będzie miało ten sam skutek - przejście do katalogu
-		domowego użytkownika.
+<div class="main-box-in">
+	<p>GIT</p><br>
+	<a href="/moje_projekty/cheat_sheet/media/teoria_git_samuraj.pdf"> PLIK PDF TEORIA UDEMY</a><br>
+	<a href="https://git-scm.com/book/pl/v2/Pierwsze-kroki-Wprowadzenie-do-kontroli-wersji">Instrukcja gita</a><br>
+	<a href="https://www.udemy.com/course/kurs-git-i-github-od-podstaw/learn/lecture/13928492#overview">Kurs Samuraja
+		UDEMY</a><br>
+	<a href="https://www.samouczekprogramisty.pl/poczatki-pracy-z-wierszem-polecen/">początki z wierszem polecen</a><br>
+	<a href="https://onlywei.github.io/explain-git-with-d3/#rebase">narzedzie ktore pozwoli zrozumiec jak dziala
+		git</a><br>
+	<a href="https://codecouple.pl/2016/02/11/gitflow-workflow-model-pracy-z-gitem/">Gitflow Workflow – model pracy z
+		Git’em</a> <br>
+	<p>terminal</p>
+	<p>komendy w terminalu</p>
+	<ul>git
+		<li>clear - czysci ekran terminala</li>
+		<li>pwd - wyswietla sciezke w ktorej sie znajdujemy</li>
+		<li>mkdir - tworzy folder</li>
+		<li>touch - tworzy plik</li>
+		<li> >> - tworzy plik (można użyc jednego nawiasu > ale jesli mamy juz plik o takiej nazwie zostanie on
+			nadpisany
+		</li>
+		<li> echo "jakas treść" >> nazwa_pliku - tworzy plik i umieszcza w nim tresc z cudzyslowia</li>
+		<li>rm - usuwa plik (np "rm *.html" usunie wsztkie pliki z rozszerzeniem html</li>
+		<li>rm -r nazwa folderu - usuwa folder</li>
+		<li>cp - kopiuje plik z obecnego folderu do folderu wskazanego</li>
+		<li>cp -r - kopiuje folder</li>
+		<li>mv - kopiuje (mv plik.txt /katalog/configi/) lub zmienia nazwe (np mv nazwa_obecna nowa_nazwa)
+		<li>cd .. - przenosi do katalogu nadrzędnego (o jeden folder wyzej)</li>
+		<li>cd - przenosi nas do katalogu domowego (głównego)</li>
+		<li>cd ~ - </li>
+		<li>rożnica miedzy cd a cd ~ - Wykonanie obydwóch poleceń będzie miało ten sam skutek - przejście do katalogu
+			domowego użytkownika.
 
-		Diabeł tkwi w szczegółach tj. w przypadku braku argumentów polecenie cd samo odczyta wartość zmiennej $HOME,
-		natomiast w przypadku podania ~ powłoka (Bash) rozwinie tą zmienną (wstawi wartośc zmiennej $HOME przed
-		wykonaniem polecenia).</li>
-	<li>cd nazwa_katalogu – przeniesienie do katalogu "nazwa_katalogu" podrzędnego w stosunku do aktualnego</li>
-	<li>cd /home/user/Muzyka – przeniesie nas z katalogu, w którym aktualnie jesteśmy do /home/user/Muzyka</li>
-	<li>cd - – przeniesienie do poprzedniego katalogu bieżącego</li>
-	<li>ls - wyswietla liste plikow i folderow</li>
-	<li>ls -a - pokazuje rowniez pliki ukryte</li>
-	<li>code - otwiera vs code</li>
-	<li>code . - otwiera w vs code folder w ktorym sie znajdujemy</li>
-	<li> code nazwa_pliku - otwiera plik w vs code</li>
-	<li>open - otwiera plik w textedit</li>
-	<li>cat - drukuje plik w terminalu</li>
-	<li>chmod (ang. change mode – zmiana atrybutu) – polecenie zmiany zezwoleń dostępu do plików w systemach uniksowych
-		<a href="https://pl.wikipedia.org/wiki/Chmod">link do wiki</a></li>
-</ul>
-<p>komemndy gita</p>
-<ul>
-	<li>git config --global - konfiguracja globalna gita</li>
-	<li>git config --global user.name "Krzysztfo Markiewicz" - przypisuje uzytkownika (komenda bez podawania danych
-		wyswietli nazwe uzytkownika)
-	</li>
-	<li>git config --global user.email "krismarkiew@gmail.com" - przypisuje email (komenda bez podawania danych
-		wyswietli podamny e-mail)
-	<li>git config user.name "krzysztof markiewicz' - zapisuje uzytkownika nie globalnie tylko do danego porjektu</li>
-	<li>git config --global --unset user.mail - usuwa nazwe uzytkowmnika (tak samo z e-mailem mozna)</li>
-	<li>git init - tworzy repozytorium gita (.git) </li>
-	<li>git status - informuje o statusie plików w folderze roboczym</li>
-	<li>git add - dodaje plik (lub kilka lub wszystkie) do stagu
-	<li>git add --all lub git add -A - dodaje wszystkie pliki ktore proponuje git do stage </li>
-	<li>git add . - dodaje wsztskie pliki z tego katalogu </li>
-	<li>git restore nazwa_pliku (lubgit checkout nazwa_plik) - przywraca stan z przed ostatyniej zmiany. Zmiany z wersji
-		roboczej są usuwane i przywracana jest (w katalogu roboczym) wersja, które znajduje się w indeksie. W praktyce
-		jeśli nie mamy żadnej zmiany w staging area to wersja jaka była po ostatnim commicie.</li>
-	<li>git commit - tworzy commit (snapshota) - po uruchomieniu komendy otworzy sie prosba o wpisanie informacji jakie
-		zmiany dokonaly sie w projekcie (przy pierwszym commitcie wpisac najlepiej "initial commit" -uzupełniamy
-		informacje po angielsku</li>
-	<li>git commit -m "tekst informacyjny do commita" - tworzy commit (snapshota)z informacją o zmianach </li>
-	<li>git commit -a - każdy zmieniony plik, który jest już śledzony, automatycznie trafi do poczekalni, dzięki czemu
-		pominiesz część git add</li>
-	<li>git rm nazwa_pliku - usuwa plik z kqtalogu roboczegi indexu (stagu), i przy commicie usunięcie się dokona, jelsi
-		uzyjemy samo rm (bez git) wtedy plik sie usuwa z katalogu roboczego ale zostaje w gicie tylko jako zmiana
-		(swieci na czerwono)</li>
-	<li>git rm --cached plik - usuwa pliki z indeksu, ale nie z katalogu roboczego (po tym poleceniu plik ma stan
-		nieśledzony</li>
-	<li>git mv index.txt index.html - zamiana nazwy pliku. Przy czym w praktyce widzimy, że mamy zadanie renamed w
-		następnym commicie, które oznacza polecenie usunięcia jednego pliku i dodania nowego.</li>
-	</li>
+			Diabeł tkwi w szczegółach tj. w przypadku braku argumentów polecenie cd samo odczyta wartość zmiennej $HOME,
+			natomiast w przypadku podania ~ powłoka (Bash) rozwinie tą zmienną (wstawi wartośc zmiennej $HOME przed
+			wykonaniem polecenia).</li>
+		<li>cd nazwa_katalogu – przeniesienie do katalogu "nazwa_katalogu" podrzędnego w stosunku do aktualnego</li>
+		<li>cd /home/user/Muzyka – przeniesie nas z katalogu, w którym aktualnie jesteśmy do /home/user/Muzyka</li>
+		<li>cd - – przeniesienie do poprzedniego katalogu bieżącego</li>
+		<li>ls - wyswietla liste plikow i folderow</li>
+		<li>ls -a - pokazuje rowniez pliki ukryte</li>
+		<li>code - otwiera vs code</li>
+		<li>code . - otwiera w vs code folder w ktorym sie znajdujemy</li>
+		<li> code nazwa_pliku - otwiera plik w vs code</li>
+		<li>open - otwiera plik w textedit</li>
+		<li>cat - drukuje plik w terminalu</li>
+		<li>chmod (ang. change mode – zmiana atrybutu) – polecenie zmiany zezwoleń dostępu do plików w systemach
+			uniksowych
+			<a href="https://pl.wikipedia.org/wiki/Chmod">link do wiki</a></li>
+	</ul>
+</div>
+<div class="main-box-in">
+	<p>komemndy gita</p>
+	<ul>
+		<li>git config --global - konfiguracja globalna gita</li>
+		<li>git config --global user.name "Krzysztfo Markiewicz" - przypisuje uzytkownika (komenda bez podawania danych
+			wyswietli nazwe uzytkownika)
+		</li>
+		<li>git config --global user.email "krismarkiew@gmail.com" - przypisuje email (komenda bez podawania danych
+			wyswietli podamny e-mail)
+		<li>git config user.name "krzysztof markiewicz' - zapisuje uzytkownika nie globalnie tylko do danego porjektu
+		</li>
+		<li>git config --global --unset user.mail - usuwa nazwe uzytkowmnika (tak samo z e-mailem mozna)</li>
+		<li>git init - tworzy repozytorium gita (.git) </li>
+		<li>git status - informuje o statusie plików w folderze roboczym</li>
+		<li>git add - dodaje plik (lub kilka lub wszystkie) do stagu
+		<li>git add --all lub git add -A - dodaje wszystkie pliki ktore proponuje git do stage </li>
+		<li>git add . - dodaje wsztskie pliki z tego katalogu </li>
+		<li>git restore nazwa_pliku (lubgit checkout nazwa_plik) - przywraca stan z przed ostatyniej zmiany. Zmiany z
+			wersji
+			roboczej są usuwane i przywracana jest (w katalogu roboczym) wersja, które znajduje się w indeksie. W
+			praktyce
+			jeśli nie mamy żadnej zmiany w staging area to wersja jaka była po ostatnim commicie.</li>
+		<li>git commit - tworzy commit (snapshota) - po uruchomieniu komendy otworzy sie prosba o wpisanie informacji
+			jakie
+			zmiany dokonaly sie w projekcie (przy pierwszym commitcie wpisac najlepiej "initial commit" -uzupełniamy
+			informacje po angielsku</li>
+		<li>git commit -m "tekst informacyjny do commita" - tworzy commit (snapshota)z informacją o zmianach </li>
+		<li>git commit -a - każdy zmieniony plik, który jest już śledzony, automatycznie trafi do poczekalni, dzięki
+			czemu
+			pominiesz część git add</li>
+		<li>git rm nazwa_pliku - usuwa plik z kqtalogu roboczegi indexu (stagu), i przy commicie usunięcie się dokona,
+			jelsi
+			uzyjemy samo rm (bez git) wtedy plik sie usuwa z katalogu roboczego ale zostaje w gicie tylko jako zmiana
+			(swieci na czerwono)</li>
+		<li>git rm --cached plik - usuwa pliki z indeksu, ale nie z katalogu roboczego (po tym poleceniu plik ma stan
+			nieśledzony</li>
+		<li>git mv index.txt index.html - zamiana nazwy pliku. Przy czym w praktyce widzimy, że mamy zadanie renamed w
+			następnym commicie, które oznacza polecenie usunięcia jednego pliku i dodania nowego.</li>
+		</li>
 
-	<li>git log - pookazuje logi (np ostani commit - klucz , nazwe autora itd)</li>
-	<li>git log --oneline - pokazuje najwazniejsz info o zdarzeniach (co było robione z autorem data i trescia zmian
-	</li>
-	<li>git diff - porownuje wartosc z commitu do tego co znajduje sie obecnie w wersji roboczej; pokazuje pliki i
-		zmiany jakie sie dokonaly łacznie ze sczegolami </li>
-	<li>git commit --amend - pozwala edytowac opis ostatniego commitu</li>
+		<li>git log - pookazuje logi (np ostani commit - klucz , nazwe autora itd)</li>
+		<li>git log --oneline - pokazuje najwazniejsz info o zdarzeniach (co było robione z autorem data i trescia zmian
+		</li>
+		<li>git diff - porownuje wartosc z commitu do tego co znajduje sie obecnie w wersji roboczej; pokazuje pliki i
+			zmiany jakie sie dokonaly łacznie ze sczegolami </li>
+		<li>git commit --amend - pozwala edytowac opis ostatniego commitu</li>
 
-	<li>git clone - kopiowanie repozytorium <br>
-		example 1: git clone book book2 - kopiuje repo z projektu book do folderu roboczego book2) <br>
-		example 2 : git clone https://github.com/Codeinwp/Ideal-Image-Slider-JS slider_js (z gita https sklonowano i
-		zapisano folder roboczy w nfolderze slider_js; mozna nie podawac nazwy folderu docelowego wtedy utworzy sobie
-		katalod o nazwie gita)
-	</li>
-	<li>git remote add nazwa_remota adres - ustawianie zdalnego adresu gdzie będziemy mogli np pushowac repo <br>
-		example:  git remote add origin https://github.com/krzysztofmarkiewicz/cheat_sheet_webdev.git
-	(czyli git ustwaia remote o nazwie origin z adresem https://github...</li>
-	<li>git push -u origin master - wyslanie pod adres podany w remote o nazwie origin naszego repo na branch master (parametr "-u" ustawia set upstream, tak jakby stała połączenie, potem mozmy pushowac bez tego parametru wystarczy samo git push</li>
-<li>git remote -v - sprawdzenie adresu gdzie sie pushuje i skad pulluje</li>
-	<li>wazne<ul>
-			<li>git rm plik - usuwa plik z indeksu (staging area) i z katalogu roboczego</li>
-			<li>git rm --cached plik - usuwa plik z indeksu, plik staje się nieśledzony.</li>
-			<li>git checkout -- plik - do katalogu roboczego przywracana jest wersja, która znajduje się aktualnie w
-				indeksie</li>
+		<li>git clone - kopiowanie repozytorium <br>
+			example 1: git clone book book2 - kopiuje repo z projektu book do folderu roboczego book2) <br>
+			example 2 : git clone https://github.com/Codeinwp/Ideal-Image-Slider-JS slider_js (z gita https sklonowano i
+			zapisano folder roboczy w nfolderze slider_js; mozna nie podawac nazwy folderu docelowego wtedy utworzy
+			sobie
+			katalod o nazwie gita)
+		</li>
+		<li>git remote add nazwa_remota adres - ustawianie zdalnego adresu gdzie będziemy mogli np pushowac repo <br>
+			example: git remote add origin https://github.com/krzysztofmarkiewicz/cheat_sheet_webdev.git
+			(czyli git ustwaia remote o nazwie origin z adresem https://github...</li>
+		<li>git push -u origin master - wyslanie pod adres podany w remote o nazwie origin naszego repo na branch master
+			(parametr "-u" ustawia set upstream, tak jakby stała połączenie, potem mozmy pushowac bez tego parametru
+			wystarczy samo git push</li>
+		<li>git remote -v - sprawdzenie adresu gdzie sie pushuje i skad pulluje</li>
+		<li>wazne<ul>
+				<li>git rm plik - usuwa plik z indeksu (staging area) i z katalogu roboczego</li>
+				<li>git rm --cached plik - usuwa plik z indeksu, plik staje się nieśledzony.</li>
+				<li>git checkout -- plik - do katalogu roboczego przywracana jest wersja, która znajduje się aktualnie w
+					indeksie</li>
 
-			<li>git reset HEAD plik (lub git reset --plik) - usuwa z indeksu zmiany (przywracamy do indeksu wersję jaka
-				była po ostatnim
-				commicie)</li>
-		</ul>
-	</li>
+				<li>git reset HEAD plik (lub git reset --plik) - usuwa z indeksu zmiany (przywracamy do indeksu wersję
+					jaka
+					była po ostatnim
+					commicie)</li>
+			</ul>
+		</li>
 
-</ul>
-<p>w pliku gitignore znajduje się informacja ktorych elementow nie uwzgledniac w repo (np ze wzgledu na rozmiar) </p>
-<ul>
-	<li>.gitignore ignoruje pliki tylko jeżeli są nieśledzone, jeżlei ma być plik lub folder ignorowany musi być usunięt
-		z indexu (mnajcześciej ignorujemy pliki ktore sa nowo utworzone) </li>
-	<li>w .gitignore dodajemy komentarze poprzez wpisanie przed nim # - opisujemy czemu plik jest ignorowany (np. plik
-		rovboczy jakiegos tam projektu, nie jest czescia repo </li>
-</ul>
-<p>git nie sledzi pustych katalogów</p>
+	</ul>
+	<p>w pliku gitignore znajduje się informacja ktorych elementow nie uwzgledniac w repo (np ze wzgledu na rozmiar)
+	</p>
+	<ul>
+		<li>.gitignore ignoruje pliki tylko jeżeli są nieśledzone, jeżlei ma być plik lub folder ignorowany musi być
+			usunięt
+			z indexu (mnajcześciej ignorujemy pliki ktore sa nowo utworzone) </li>
+		<li>w .gitignore dodajemy komentarze poprzez wpisanie przed nim # - opisujemy czemu plik jest ignorowany (np.
+			plik
+			rovboczy jakiegos tam projektu, nie jest czescia repo </li>
+	</ul>
+	<p>git nie sledzi pustych katalogów</p>
 
-<p> gałąź master <br>
-git branch <br>
-Na jakim branchu (gałęzi) się znajdujemy. <br>
-Początkowo mamy jedną gałąż z nazwą master. Po wpisaniu git branch dostaniemy informację o istniejących gałęziach (by to zobaczyć wcześniej musimy zrobić choć jeden commit)</p>
-<p>branches - gałęzie <br>
-	Gałąź główna - master (pierwsza gałąź w naszym repozytorium) <br>
-	Tworzenie osobnych gałęzi służy rozwijaniu niezależnych/testowych/pobocznych elementów projektu. <br>
-	Gałęzie mogą być scalane - merge (czyli np tworzona jakas funkcjonalnosc  (w ramach jednego projektu) mozemy polaczyc z glownym projektem<br>
-	Gałęzie mogą mieć zupełnie różną zawartość. <br><br>
-	Git branch - przykładowe polecenie <br>
-git branch //lista wszystkich branchów <br>
-git branch nazwa-nowego-brancha //tworzymy nową gałąź <br>
-git checkout nazwa-istniejącego-brancha //przełączamy się na inną gałąź <br>
-git merge nazw-brancha //łączenie gałęzi na której jesteśmy ze wskazaną gałęzią. <br>
+	<p> gałąź master <br>
+		git branch <br>
+		Na jakim branchu (gałęzi) się znajdujemy. <br>
+		Początkowo mamy jedną gałąż z nazwą master. Po wpisaniu git branch dostaniemy informację o istniejących
+		gałęziach (by to zobaczyć wcześniej musimy zrobić choć jeden commit)</p>
+	<p>branches - gałęzie <br>
+		Gałąź główna - master (pierwsza gałąź w naszym repozytorium) <br>
+		Tworzenie osobnych gałęzi służy rozwijaniu niezależnych/testowych/pobocznych elementów projektu. <br>
+		Gałęzie mogą być scalane - merge (czyli np tworzona jakas funkcjonalnosc (w ramach jednego projektu) mozemy
+		polaczyc z glownym projektem<br>
+		Gałęzie mogą mieć zupełnie różną zawartość. <br><br>
+		Git branch - przykładowe polecenie <br>
+		git branch //lista wszystkich branchów <br>
+		git branch nazwa-nowego-brancha //tworzymy nową gałąź <br>
+		git checkout nazwa-istniejącego-brancha //przełączamy się na inną gałąź <br>
+		git merge nazw-brancha //łączenie gałęzi na której jesteśmy ze wskazaną gałęzią. <br>
 
-<p>HEAD <br>
-określa do której gałęzi się odnosimy <br>
-ref: refs/heads/master <br>
-//zawartość pliku .git/HEAD wskazująca na aktualną gałąź (oczywiście może na inną np. refs/heads/news-page gdy gałąź aktywna to news-page) <br><br>
-Head wskazuje też na bieżący (ostatni) commit (wierzchołek gałęzi). Kolejny commit odniesie się do HEAD (i sam stanie się HEAD)
-</p>
+		<p>HEAD <br>
+			określa do której gałęzi się odnosimy <br>
+			ref: refs/heads/master <br>
+			//zawartość pliku .git/HEAD wskazująca na aktualną gałąź (oczywiście może na inną np. refs/heads/news-page
+			gdy gałąź aktywna to news-page) <br><br>
+			Head wskazuje też na bieżący (ostatni) commit (wierzchołek gałęzi). Kolejny commit odniesie się do HEAD (i
+			sam stanie się HEAD)
+		</p>
 
-<p>Git push - przekazywanie zmian z jednego repozytorium (naszego lokalnego) do innego repozytorium (zdalnego).
-	Aktualizujemy repozytorium które sklonowaliśmy (zdalne)</p>
-	<p> Git pull - pobieranie zmian z jednego repozytoriu (zdalnego) na inne (nasze lokalne).
-	Nasze sklonowane repozytorium jest aktualizowane.</p>
+		<p>Git push - przekazywanie zmian z jednego repozytorium (naszego lokalnego) do innego repozytorium (zdalnego).
+			Aktualizujemy repozytorium które sklonowaliśmy (zdalne)</p>
+		<p> Git pull - pobieranie zmian z jednego repozytoriu (zdalnego) na inne (nasze lokalne).
+			Nasze sklonowane repozytorium jest aktualizowane.</p>
 
-</p>
-<p>stylowanie pliku readme.md <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#emphasis">link</a></p>
-<p> Mamy trzy głowne obszary</p>
-<ul>
-	<li>katalog roboczy (folder główny z projektem)</li>
-	<li>katalog.git(katalog z repozytorium) znajduje się w katalogu roboczym</li>
-	<li>index (stage/przechowalnia) - zawiera pliki ktore maja bhc uwzgledniopne w kolejnym snapshotcie (zmiany ktopre
-		sie dokonaly)</li>
-</ul>
+	</p>
+	<p>stylowanie pliku readme.md <a
+			href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#emphasis">link</a></p>
+	<p> Mamy trzy głowne obszary</p>
+	<ul>
+		<li>katalog roboczy (folder główny z projektem)</li>
+		<li>katalog.git(katalog z repozytorium) znajduje się w katalogu roboczym</li>
+		<li>index (stage/przechowalnia) - zawiera pliki ktore maja bhc uwzgledniopne w kolejnym snapshotcie (zmiany
+			ktopre
+			sie dokonaly)</li>
+	</ul>
 
-<p>Są 4 stany plików w repozytorium git</p>
-<ul>
-	<li>plik nieśledzony</li>
-	<li>plik śledzony niezmodyfikowany</li>
-	<li>plik śledzony zmodyfikowany (ten na ekranie)</li>
-	<li>plik śledzony w indeksie (inaczej w stagu/w przechowalni) oczekujący na commit</li>
-</ul>
+	<p>Są 4 stany plików w repozytorium git</p>
+	<ul>
+		<li>plik nieśledzony</li>
+		<li>plik śledzony niezmodyfikowany</li>
+		<li>plik śledzony zmodyfikowany (ten na ekranie)</li>
+		<li>plik śledzony w indeksie (inaczej w stagu/w przechowalni) oczekujący na commit</li>
+	</ul>
+</div>
