@@ -49,7 +49,6 @@
                     </li>
                     nie rozpoczynamy nazwy zmiennej od dużej litery
                     <li>
-
                     </li>
                 </ul>
             </li>
@@ -62,12 +61,13 @@
             <li>w DOMie możemy mieć treści przezntowane dynamicznie których nie posiadamy w naszym HTMLu</li>
         </ul>
     </li>
-    <li>Typy danych
+    <li>
+        <h1>Typy danych</h1>
         <ul>
             <li>Typy proste (prymitywne)
                 <ul>
                     <li>
-                        STRING - 'cześć' - tekst
+                        STRING - 'cześć' - tekst (wpisujemy w `` '' "")
                     </li>
                     <li>NUMBER - 23 (liczby</li>
                     <li>BOOLEAN - TRUE/FALSE</li>
@@ -85,13 +85,13 @@
         </ul>
     </li>
     <li>
+        <h1>METODY I WŁASNOŚCI</h1>
+        <p>tworzenie nazwa_zmiennej.nazwa_metody lub własnsnoci.nazwa koljejnej metody itd</p>
 
-        OPERATORY <a href="http://kursjs.pl/kurs/super-podstawy/operatory.php">MDN</a>
-        <h1>Operatory</h1>
-
+        <h1>OPERATORY</h1> <a href="http://kursjs.pl/kurs/super-podstawy/operatory.php">MDN</a>
 
         <p>
-            Operatory, ah operatory.
+           <h2>OPERATORY ARYTMETYCZNE.</h2> 
             Gdy napiszesz <strong>4 + 5</strong>, znak <strong>+</strong> to właśnie operator, a <strong>4</strong> i
             <strong>5</strong> to tak zwane operandy.
         </p>
@@ -152,7 +152,7 @@
             </tr>
             <tr>
                 <td rowspan="2">++</td>
-                <td rowspan="2">Inkrementacja</td>
+                <td rowspan="2">Inkrementacja (dodaj jeden)</td>
                 <td>x = ++y</td>
                 <td>y = 6</td>
                 <td>x = 6</td>
@@ -164,7 +164,7 @@
             </tr>
             <tr>
                 <td rowspan="2">--</td>
-                <td rowspan="2">Dekrementacja</td>
+                <td rowspan="2">Dekrementacja (odejmij jeden)</td>
                 <td>x = --y</td>
                 <td>y = 4</td>
                 <td>x = 4</td>
@@ -184,280 +184,280 @@
             console.log(x / 2); //2.5
             console.log(x % 2); //1
             console.log(x**3); //125
-            /<code>
+        </code>
 
-                <p>Zwróć uwagę na operator inkrementacji, który może występować przed zmienną lub po zmiennej.</p>
+        <p>Zwróć uwagę na operator inkrementacji, który może występować przed zmienną lub po zmiennej.</p>
 
-                <p>Gdy występuje przed zmienną, zwiększenie jej wartości nastąpi w danej instrukcji.
-                    Jeżeli występuje po zmiennej, zwiększona wartość wystąpi dopiero w kolejnej instrukcji.</p>
+        <p>Gdy występuje przed zmienną, zwiększenie jej wartości nastąpi w danej instrukcji.
+            Jeżeli występuje po zmiennej, zwiększona wartość wystąpi dopiero w kolejnej instrukcji.</p>
 
-                <code>
-                    const x = 5;
-                    console.log(x--); //5
-                    console.log(x); //4
+        <code>
+            const x = 5;
+            console.log(x--); //5
+            console.log(x); //4
 
-                    const y = 5;
-                    if (y-- < 5) { //nie wypisze się } </code> <code>
-                        const x = 5;
-                        console.log(--x); //4
-                        console.log(x); //4
+            const y = 5;
+            if (y-- "znak mniejszosci" 5) { //nie wypisze się } </code> <code>
+            const x = 5;
+            console.log(--x); //4
+            console.log(x); //4
 
-                        const y = 5;
-                        if (--y < 5) { //wypisze się } </code> <code>
-                            const x = 24;
+            const y = 5;
+            if (--y "znak mniejszosci" 5) { //wypisze się } </code> <code>
+            const x = 24;
 
-                            if (x % 2 === 0) {
-                            console.log("Liczba parzysta");
-                            }
-                </code>
+            if (x % 2 === 0) {
+            console.log("Liczba parzysta");
+            }
+        </code>
+
+        <!-- ### -->
+        <h2>Operatory Przypisania</h2>
+        <p>
+            Czyli operatory, które służą do przypisania do zmiennej jakiejś wartości, pola, obiektu itp.<br>
+            Poniżej zamieszczamy przykłady dla <strong>x = 10</strong> i <strong> y = 5</strong>:
+        </p>
+
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Przykład</th>
+                <th>Równoznaczne z</th>
+                <th>Wynik</th>
+            </tr>
+            <tr>
+                <td>=</td>
+                <td>x = y</td>
+                <td>x = y</td>
+                <td>x = 5</td>
+            </tr>
+            <tr>
+                <td>+=</td>
+                <td>x += y</td>
+                <td>x = x + y</td>
+                <td>x = 15</td>
+            </tr>
+            <tr>
+                <td>-=</td>
+                <td>x -= y</td>
+                <td>x = x - y</td>
+                <td>x = 5</td>
+            </tr>
+            <tr>
+                <td>*=</td>
+                <td>x *= y</td>
+                <td>x = x * y</td>
+                <td>x = 50</td>
+            </tr>
+            <tr>
+                <td>/=</td>
+                <td>x /= y</td>
+                <td>x = x / y</td>
+                <td>x = 2</td>
+            </tr>
+            <tr>
+                <td>%=</td>
+                <td>x %= y</td>
+                <td>x = x % y</td>
+                <td>x = 0</td>
+            </tr>
+        </table>
+        <code>
+            let myVar = "Przykładowy tekst";
+            myVar += " który nie";
+            myVar += " zmieścił by się w jednej linijce";
+
+            let x = 10;
+            x += 5; //15
+        </code>
+
+        <!-- ### -->
+        <h2>Operatory Porównania</h2>
+        <p>
+            Operatory logiczne stosuje się w instrukcjach warunkowych.
+            Służą one do porównywania lewej strony równania do prawej, w wyniku której zawsze zwracana jest
+            true/false.
+        </p>
+
+        <p>Poniżej zamieszczam przykłady dla <strong>x = 5</strong></p>
+
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Opis</th>
+                <th>Równanie</th>
+                <th>Zwróci</th>
+            </tr>
+            <tr>
+                <td>==</td>
+                <td>równe</td>
+                <td>x == 8</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>!=</td>
+                <td>różne</td>
+                <td>x != 8</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td rowspan="2">===</td>
+                <td rowspan="2">równa wartość i taki sam typ danych<span>W naszym przykładzie x to numer,
+                        a 5 po prawej stronie jest tekstem</span></td>
+                <td>x === 5</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>x === "5"</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td rowspan="2">!==</td>
+                <td rowspan="2">różne wartości lub różny typ danych<span>W naszym przykładzie x to numer,
+                        a 5 po prawej stronie jest tekstem</span></td>
+                <td>x !== "5"</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>x !== 5</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>&gt;</td>
+                <td>większe od</td>
+                <td>x &gt; 8</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>&lt;</td>
+                <td>mniejsze od</td>
+                <td>x &lt; 8</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>&gt;=</td>
+                <td>większe bądź równe od</td>
+                <td>x &gt;= 8</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>&lt;=</td>
+                <td>mniejsze bądź równe od</td>
+                <td>x &lt;= 8</td>
+                <td>true</td>
+            </tr>
+        </table>
+
+        <code>
+            const myVar = 8;
+
+            if (myVar === 10) {
+            //ten kawałek kodu się nie wykona
+            }
+
+            if (myVar <= 10) { //ten kawałek kodu się wykona } if (myVar !==8) { //ten kawałek kodu się nie wykona }
+                </code> <p>Więcej na ten temat dowiemy się podczas stosowania <a
+                    href="./instrukcje-warunkowe.php">instrukcji
+                    warunkowych</a>.</p>
 
                 <!-- ### -->
-                <h2>Operatory Przypisania</h2>
+                <h2>Operatory Logiczne</h2>
                 <p>
-                    Czyli operatory, które służą do przypisania do zmiennej jakiejś wartości, pola, obiektu itp.<br>
-                    Poniżej zamieszczamy przykłady dla <strong>x = 10</strong> i <strong> y = 5</strong>:
+                    Są one także stosowane w instrukcjach warunkowych. Za ich pomocą możemy łączyć kilka
+                    porównań w jedną
+                    całość. Poniżej przykłady
+                    dla <strong>x = 6</strong> i <strong>y = 3</strong>:
                 </p>
-
-                <table>
-                    <tr>
-                        <th>Operator</th>
-                        <th>Przykład</th>
-                        <th>Równoznaczne z</th>
-                        <th>Wynik</th>
-                    </tr>
-                    <tr>
-                        <td>=</td>
-                        <td>x = y</td>
-                        <td>x = y</td>
-                        <td>x = 5</td>
-                    </tr>
-                    <tr>
-                        <td>+=</td>
-                        <td>x += y</td>
-                        <td>x = x + y</td>
-                        <td>x = 15</td>
-                    </tr>
-                    <tr>
-                        <td>-=</td>
-                        <td>x -= y</td>
-                        <td>x = x - y</td>
-                        <td>x = 5</td>
-                    </tr>
-                    <tr>
-                        <td>*=</td>
-                        <td>x *= y</td>
-                        <td>x = x * y</td>
-                        <td>x = 50</td>
-                    </tr>
-                    <tr>
-                        <td>/=</td>
-                        <td>x /= y</td>
-                        <td>x = x / y</td>
-                        <td>x = 2</td>
-                    </tr>
-                    <tr>
-                        <td>%=</td>
-                        <td>x %= y</td>
-                        <td>x = x % y</td>
-                        <td>x = 0</td>
-                    </tr>
-                </table>
-                <code>
-                    let myVar = "Przykładowy tekst";
-                    myVar += " który nie";
-                    myVar += " zmieścił by się w jednej linijce";
-
-                    let x = 10;
-                    x += 5; //15
-                </code>
-
-                <!-- ### -->
-                <h2>Operatory Porównania</h2>
-                <p>
-                    Operatory logiczne stosuje się w instrukcjach warunkowych.
-                    Służą one do porównywania lewej strony równania do prawej, w wyniku której zawsze zwracana jest
-                    true/false.
-                </p>
-
-                <p>Poniżej zamieszczam przykłady dla <strong>x = 5</strong></p>
 
                 <table>
                     <tr>
                         <th>Operator</th>
                         <th>Opis</th>
-                        <th>Równanie</th>
-                        <th>Zwróci</th>
+                        <th style="width:150px">Przykład</th>
+                        <th>Wynik</th>
                     </tr>
                     <tr>
-                        <td>==</td>
-                        <td>równe</td>
-                        <td>x == 8</td>
-                        <td>false</td>
+                        <td>&amp;&amp;</td>
+                        <td>and (i)</td>
+                        <td>(x &lt; 10 &amp;&amp; y &gt; 1)</td>
+                        <td>Prawda, bo x jest mniejsze od 10 <strong>i</strong> y jest większe od 1</td>
                     </tr>
                     <tr>
-                        <td>!=</td>
-                        <td>różne</td>
-                        <td>x != 8</td>
-                        <td>true</td>
+                        <td>||</td>
+                        <td>or (lub)</td>
+                        <td>(x &gt; 8 || y &gt; 1)</td>
+                        <td>Prawda, bo x nie jest większe od 8, ale y jest większe od 1</td>
                     </tr>
                     <tr>
-                        <td rowspan="2">===</td>
-                        <td rowspan="2">równa wartość i taki sam typ danych<span>W naszym przykładzie x to numer,
-                                a 5 po prawej stronie jest tekstem</span></td>
-                        <td>x === 5</td>
-                        <td>true</td>
+                        <td>^</td>
+                        <td>xor (jeden z, ale nie dwa równocześnie)</td>
+                        <td>(x === 6 ^ y === 3)</td>
+                        <td>Fałsz, bo obydwa są prawdziwe</td>
                     </tr>
                     <tr>
-                        <td>x === "5"</td>
-                        <td>false</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">!==</td>
-                        <td rowspan="2">różne wartości lub różny typ danych<span>W naszym przykładzie x to numer,
-                                a 5 po prawej stronie jest tekstem</span></td>
-                        <td>x !== "5"</td>
-                        <td>true</td>
-                    </tr>
-                    <tr>
-                        <td>x !== 5</td>
-                        <td>false</td>
-                    </tr>
-                    <tr>
-                        <td>&gt;</td>
-                        <td>większe od</td>
-                        <td>x &gt; 8</td>
-                        <td>false</td>
-                    </tr>
-                    <tr>
-                        <td>&lt;</td>
-                        <td>mniejsze od</td>
-                        <td>x &lt; 8</td>
-                        <td>true</td>
-                    </tr>
-                    <tr>
-                        <td>&gt;=</td>
-                        <td>większe bądź równe od</td>
-                        <td>x &gt;= 8</td>
-                        <td>false</td>
-                    </tr>
-                    <tr>
-                        <td>&lt;=</td>
-                        <td>mniejsze bądź równe od</td>
-                        <td>x &lt;= 8</td>
-                        <td>true</td>
+                        <td>!</td>
+                        <td>not (negacja)</td>
+                        <td>!(x === y)</td>
+                        <td>Prawda, bo negujemy to, że x === y</td>
                     </tr>
                 </table>
 
                 <code>
                     const myVar = 8;
+                    const myVar2 = 15;
 
-                    if (myVar === 10) {
-                    //ten kawałek kodu się nie wykona
+                    if (myVar === 8 && myVar2 === 10) {
+                    //ten kawałek kodu się nie wykona bo mamy "i", oba muszą być spełnione, a nie są
                     }
 
-                    if (myVar <= 10) { //ten kawałek kodu się wykona } if (myVar !==8) { //ten kawałek kodu się nie
-                        wykona } </code> <p>Więcej na ten temat dowiemy się podczas stosowania <a
-                            href="./instrukcje-warunkowe.php">instrukcji
-                            warunkowych</a>.</p>
+                    if (myVar === 8 || myVar2 === 8) {
+                    //ten kawałek się wykona bo mamy "lub" - jeden z warunków jest poprawny
+                    }
 
-                        <!-- ### -->
-                        <h2>Operatory Logiczne</h2>
-                        <p>
-                            Są one także stosowane w instrukcjach warunkowych. Za ich pomocą możemy łączyć kilka
-                            porównań w jedną
-                            całość. Poniżej przykłady
-                            dla <strong>x = 6</strong> i <strong>y = 3</strong>:
-                        </p>
+                    if (myVar === 8 ^ myVar2 === 15) {
+                    //ten kawałek się nie wykona bo mamy "xor", a oba są spełnione
+                    }
 
-                        <table>
-                            <tr>
-                                <th>Operator</th>
-                                <th>Opis</th>
-                                <th style="width:150px">Przykład</th>
-                                <th>Wynik</th>
-                            </tr>
-                            <tr>
-                                <td>&amp;&amp;</td>
-                                <td>and (i)</td>
-                                <td>(x &lt; 10 &amp;&amp; y &gt; 1)</td>
-                                <td>Prawda, bo x jest mniejsze od 10 <strong>i</strong> y jest większe od 1</td>
-                            </tr>
-                            <tr>
-                                <td>||</td>
-                                <td>or (lub)</td>
-                                <td>(x &gt; 8 || y &gt; 1)</td>
-                                <td>Prawda, bo x nie jest większe od 8, ale y jest większe od 1</td>
-                            </tr>
-                            <tr>
-                                <td>^</td>
-                                <td>xor (jeden z, ale nie dwa równocześnie)</td>
-                                <td>(x === 6 ^ y === 3)</td>
-                                <td>Fałsz, bo obydwa są prawdziwe</td>
-                            </tr>
-                            <tr>
-                                <td>!</td>
-                                <td>not (negacja)</td>
-                                <td>!(x === y)</td>
-                                <td>Prawda, bo negujemy to, że x === y</td>
-                            </tr>
-                        </table>
+                    if (!(myVar === 8)) {
+                    //ten kawałek się nie wykona, bo mamy negację!
+                    //powyższy warunek jest jednoznaczny z myVar !== 8
+                    }
 
-                        <code>
-                            const myVar = 8;
-                            const myVar2 = 15;
+                    if ((myVar === 2) || 1) {
+                    //ten kawałek zawsze się wykona, bo myVar nie jest 2,
+                    //ale drugi fragment warunku zawsze zwróci true (1 jest rzutowana na true)
+                    }
+                </code>
+                <ul>
+                    <li>Operatory arytmetyczne
+                        <br>dodawanie, odejmowanie, mnożenie, dzielenie,<br>
+                        oraz <br> modulo, czyli reszta z dzielenia (example: "let zmienna= 15 % 4" - wynik to 3)
+                        <br>
+                        inkrementacja, dekrmenetacja czyli zwiększanie lub zmniejszanie o 1 (operatory to "++" i
+                        "--")
 
-                            if (myVar === 8 && myVar2 === 10) {
-                            //ten kawałek kodu się nie wykona bo mamy "i", oba muszą być spełnione, a nie są
-                            }
-
-                            if (myVar === 8 || myVar2 === 8) {
-                            //ten kawałek się wykona bo mamy "lub" - jeden z warunków jest poprawny
-                            }
-
-                            if (myVar === 8 ^ myVar2 === 15) {
-                            //ten kawałek się nie wykona bo mamy "xor", a oba są spełnione
-                            }
-
-                            if (!(myVar === 8)) {
-                            //ten kawałek się nie wykona, bo mamy negację!
-                            //powyższy warunek jest jednoznaczny z myVar !== 8
-                            }
-
-                            if ((myVar === 2) || 1) {
-                            //ten kawałek zawsze się wykona, bo myVar nie jest 2,
-                            //ale drugi fragment warunku zawsze zwróci true (1 jest rzutowana na true)
-                            }
-                        </code>
+                    </li>
+                    <li>Operatory przypisania
                         <ul>
-                            <li>Operatory arytmetyczne
-                                <br>dodawanie, odejmowanie, mnożenie, dzielenie,<br>
-                                oraz <br> modulo, czyli reszta z dzielenia (example: "let zmienna= 15 % 4" - wynik to 3)
-                                <br>
-                                inkrementacja, dekrmenetacja czyli zwiększanie lub zmniejszanie o 1 (operatory to "++" i
-                                "--")
-
-                            </li>
-                            <li>Operatory przypisania
-                                <ul>
-                                    <li>znak "=" (czyli to co po prawej przypisujemy do tego co po lewej</li>
-                                    <li>zank "+=" (example: x += y to x = x+y</li>
-                                    <li>zank "-=" (example: x -= y to x = x-y</li>
-                                    <li>tak samo z mnożenie, dzieleniem i modulo (x %= y to x=x % y)</li>
-                                </ul>
-                            </li>
-
-                            <li>Operatory porównania <a
-                                    href="https://developer.mozilla.org/pl/docs/Web/JavaScript/Referencje/Operatory/Operatory_porównania">MDN</a>
-                                <ul>
-                                    <li>Jako rezultat porównania zwracana jest wartość logiczna (true or false)</li>
-                                </ul>
-                            </li>
-                            <li>Operatory logiczne</li>
-
+                            <li>znak "=" (czyli to co po prawej przypisujemy do tego co po lewej</li>
+                            <li>zank "+=" (example: x += y to x = x+y</li>
+                            <li>zank "-=" (example: x -= y to x = x-y</li>
+                            <li>tak samo z mnożenie, dzieleniem i modulo (x %= y to x=x % y)</li>
                         </ul>
+                    </li>
+
+                    <li>Operatory porównania <a
+                            href="https://developer.mozilla.org/pl/docs/Web/JavaScript/Referencje/Operatory/Operatory_porównania">MDN</a>
+                        <ul>
+                            <li>Jako rezultat porównania zwracana jest wartość logiczna (true or false)</li>
+                        </ul>
+                    </li>
+                    <li>Operatory logiczne</li>
+
+                </ul>
     </li>
 
-    <li>INSTRUKCJE
+    <li><h1>INSTRUKCJE WARUNKOWE</h1> 
         <ul>
             <li>IF ELSE - jeżeli to <br>
                 <code>example:
@@ -488,8 +488,22 @@
                             console.log('Hasło ma za mało znaków');<br>
                             }</code>
             </li>
-            <li>SWITCH działą podobnie jak else if
-                <br>
+            <li><p>SWITCH działą podobnie jak else if</p> 
+                <p>w switchu uzywamy stringow i numberow</p>
+                <p>tworzymy ja tak
+                    <code><pre>
+switch (wyrazenie) {
+    case przypadek1:
+        instrukcjaGdyPrzypadek1
+    break;
+    case przypadek2:
+        instrukcjaGdyPrzypadek2
+    break;
+    default:
+        instrukcjaGdyBrakDopasowanegoPrzypadku
+}</pre></code>
+                    
+                </p>
                 <code>
                     const day = 'środa'<br>
                     switch (day) { //sprawdza czy day jest<br>
@@ -521,7 +535,7 @@
                 </code>
             </li>
         </ul>
-    <li>OPERATOR WARUNKOWY/ trójargumentowy/ tójwarunkowy <br>
+    <li>OPERATOR WARUNKOWY/ trójargumentowy/ tójwarunkowy (to jest taka skrocona wersja if) <br>
         <code>zmienna = (warunek) ? TRUE : FALSE;</code>
         <code>
             let x = 8
